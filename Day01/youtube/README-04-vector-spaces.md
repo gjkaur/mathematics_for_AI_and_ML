@@ -6,10 +6,10 @@
 
 ## Videos (exact titles on YouTube)
 
-1. **[Linear combinations, span, and basis vectors \| Chapter 2, Essence of linear algebra](https://www.youtube.com/watch?v=k7RM-ot2NWY)** — 3Blue1Brown  
+1. **[Linear combinations, span, and basis vectors | Chapter 2, Essence of linear algebra](https://www.youtube.com/watch?v=k7RM-ot2NWY)** — 3Blue1Brown  
    **Maps to §2.4:** Span and subspaces inside a space; foundation for “vector space” intuition.
 
-2. **[Vectors \| Chapter 1, Essence of linear algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs)** — 3Blue1Brown  
+2. **[Vectors | Chapter 1, Essence of linear algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs)** — 3Blue1Brown  
    **Maps to §2.4:** Vectors as elements your operations act on (before full abstraction).
 
 3. **[3. Multiplication and Inverse Matrices](https://www.youtube.com/watch?v=FX4C-JpTFgY)** — MIT OpenCourseWare (Gilbert Strang)  

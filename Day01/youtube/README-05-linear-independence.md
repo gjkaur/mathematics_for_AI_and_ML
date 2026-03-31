@@ -6,10 +6,10 @@
 
 ## Videos (exact titles on YouTube)
 
-1. **[Linear combinations, span, and basis vectors \| Chapter 2, Essence of linear algebra](https://www.youtube.com/watch?v=k7RM-ot2NWY)** — 3Blue1Brown  
+1. **[Linear combinations, span, and basis vectors | Chapter 2, Essence of linear algebra](https://www.youtube.com/watch?v=k7RM-ot2NWY)** — 3Blue1Brown  
    **Maps to §2.5:** Independence vs redundancy; when combinations hit $\mathbf{0}$ nontrivially.
 
-2. **[Inverse matrices, column space and null space \| Chapter 7, Essence of linear algebra](https://www.youtube.com/watch?v=uQhTuRlWMxw)** — 3Blue1Brown  
+2. **[Inverse matrices, column space and null space | Chapter 7, Essence of linear algebra](https://www.youtube.com/watch?v=uQhTuRlWMxw)** — 3Blue1Brown  
    **Maps to §2.5:** Independent columns ↔ trivial null space; dependence ↔ nonzero vectors in $\mathcal{N}(A)$.
 
 3. **[3. Multiplication and Inverse Matrices](https://www.youtube.com/watch?v=FX4C-JpTFgY)** — MIT OpenCourseWare (Gilbert Strang)  

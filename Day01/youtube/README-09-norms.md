@@ -12,7 +12,7 @@
 2. **[Regularization Part 2: Lasso (L1) Regression](https://www.youtube.com/watch?v=NGf0voTMlcs)** — StatQuest with Josh Starmer  
    **Maps to §3.1:** **$\ell_1$** penalty $\|\mathbf{w}\|_1$ and sparsity geometry (diamond-shaped level sets).
 
-3. **[Dot products and duality \| Chapter 9, Essence of linear algebra](https://www.youtube.com/watch?v=LyGKycYT2v0)** — 3Blue1Brown  
+3. **[Dot products and duality | Chapter 9, Essence of linear algebra](https://www.youtube.com/watch?v=LyGKycYT2v0)** — 3Blue1Brown  
    **Maps to §3.1:** **Induced** norm $\|\mathbf{x}\|_2=\sqrt{\mathbf{x}^\top\mathbf{x}}$ from the standard inner product.
 
 ---

@@ -6,13 +6,13 @@
 
 ## Videos (exact titles on YouTube)
 
-1. **[Dot products and duality \| Chapter 9, Essence of linear algebra](https://www.youtube.com/watch?v=LyGKycYT2v0)** — 3Blue1Brown  
+1. **[Dot products and duality | Chapter 9, Essence of linear algebra](https://www.youtube.com/watch?v=LyGKycYT2v0)** — 3Blue1Brown  
    **Maps to §3.4:** Cosine, angle between vectors, **orthogonality** when dot product is zero.
 
-2. **[Cross products \| Chapter 10, Essence of linear algebra](https://www.youtube.com/watch?v=eu6i7WJeinw)** — 3Blue1Brown  
+2. **[Cross products | Chapter 10, Essence of linear algebra](https://www.youtube.com/watch?v=eu6i7WJeinw)** — 3Blue1Brown  
    **Maps to §3.4 (optional):** Orthogonality and 90° geometry in $\mathbb{R}^3$ (cross product).
 
-3. **[Least squares approximation \| Linear Algebra \| Khan Academy](https://www.youtube.com/watch?v=MC7l96tW8V8)** — Khan Academy  
+3. **[Least squares approximation | Linear Algebra | Khan Academy](https://www.youtube.com/watch?v=MC7l96tW8V8)** — Khan Academy  
    **Maps to §3.4:** **Orthogonal projection** and least squares (residuals orthogonal to column space).
 
 ---

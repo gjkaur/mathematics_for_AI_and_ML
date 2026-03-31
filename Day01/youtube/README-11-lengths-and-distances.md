@@ -6,7 +6,7 @@
 
 ## Videos (exact titles on YouTube)
 
-1. **[Dot products and duality \| Chapter 9, Essence of linear algebra](https://www.youtube.com/watch?v=LyGKycYT2v0)** — 3Blue1Brown  
+1. **[Dot products and duality | Chapter 9, Essence of linear algebra](https://www.youtube.com/watch?v=LyGKycYT2v0)** — 3Blue1Brown  
    **Maps to §3.3:** Length $\|\mathbf{x}\|=\sqrt{\mathbf{x}\cdot\mathbf{x}}$ and distance from the origin.
 
 2. **[Regularization Part 1: Ridge (L2) Regression](https://www.youtube.com/watch?v=Q81RR3yKn30)** — StatQuest with Josh Starmer  

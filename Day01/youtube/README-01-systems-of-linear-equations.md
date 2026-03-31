@@ -8,13 +8,13 @@
 
 Each item is **one** video; the **bold link text** is copied from the YouTube title.
 
-1. **[Lec 1 \| MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/watch?v=ZK3O402wf1c)** — MIT OpenCourseWare (Gilbert Strang)  
+1. **[Lec 1 | MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/watch?v=ZK3O402wf1c)** — MIT OpenCourseWare (Gilbert Strang)  
    **Maps to §2.1:** Row picture and column picture of $A\mathbf{x}=\mathbf{b}$; what a “system” means geometrically.
 
-2. **[Vectors \| Chapter 1, Essence of linear algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs)** — 3Blue1Brown  
+2. **[Vectors | Chapter 1, Essence of linear algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs)** — 3Blue1Brown  
    **Maps to §2.1:** Vectors as the objects $\mathbf{x}$ in $A\mathbf{x}=\mathbf{b}$.
 
-3. **[Linear combinations, span, and basis vectors \| Chapter 2, Essence of linear algebra](https://www.youtube.com/watch?v=k7RM-ot2NWY)** — 3Blue1Brown  
+3. **[Linear combinations, span, and basis vectors | Chapter 2, Essence of linear algebra](https://www.youtube.com/watch?v=k7RM-ot2NWY)** — 3Blue1Brown  
    **Maps to §2.1:** How several equations connect to span and combinations of columns of $A$.
 
 ---
