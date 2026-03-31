@@ -4,16 +4,19 @@
 
 ---
 
-## Recommended videos
+## Videos (exact titles on YouTube)
 
-| Title | Channel | Link |
-|--------|---------|------|
-| **Linear combinations, span, and basis vectors | Chapter 2** | 3Blue1Brown | [https://www.youtube.com/watch?v=k7RM-ot2NWY](https://www.youtube.com/watch?v=k7RM-ot2NWY) |
-| **Vectors | Chapter 1** (space as a setting for vectors) | 3Blue1Brown | [https://www.youtube.com/watch?v=fNk_zzaMoSs](https://www.youtube.com/watch?v=fNk_zzaMoSs) |
-| **Lecture 3: Multiplication and Inverse Matrices** (subspaces preview) | MIT OpenCourseWare (Gilbert Strang) | [https://www.youtube.com/watch?v=5hO3Ze-6ntc](https://www.youtube.com/watch?v=5hO3Ze-6ntc) |
+1. **[Linear combinations, span, and basis vectors \| Chapter 2, Essence of linear algebra](https://www.youtube.com/watch?v=k7RM-ot2NWY)** — 3Blue1Brown  
+   **Maps to §2.4:** Span and subspaces inside a space; foundation for “vector space” intuition.
+
+2. **[Vectors \| Chapter 1, Essence of linear algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs)** — 3Blue1Brown  
+   **Maps to §2.4:** Vectors as elements your operations act on (before full abstraction).
+
+3. **[3. Multiplication and Inverse Matrices](https://www.youtube.com/watch?v=FX4C-JpTFgY)** — MIT OpenCourseWare (Gilbert Strang)  
+   **Maps to §2.4:** Matrix multiplication and inverses; subspaces of $\mathbb{R}^n$ in practice.
 
 ---
 
 ## How to use
 
-Abstract “vector space” axioms in §2.4 are easier after you see **span** and **subspaces** as geometry. 3Blue1Brown Chapters 1–2 are the main visual anchor.
+Abstract §2.4 axioms are easier after **span** and **subspaces** (1)–(3). The Strang lecture uses the same $\mathbb{R}^n$ setting as the book.

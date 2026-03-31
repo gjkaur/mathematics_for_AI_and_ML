@@ -4,16 +4,19 @@
 
 ---
 
-## Recommended videos
+## Videos (exact titles on YouTube)
 
-| Title | Channel | Link |
-|--------|---------|------|
-| **Dot products and duality | Chapter 9** (cosine, angle, orthogonality) | 3Blue1Brown | [https://www.youtube.com/watch?v=LyGKycYT2v0](https://www.youtube.com/watch?v=LyGKycYT2v0) |
-| **Cross products | Chapter 10** (optional: related 90° geometry in 3D) | 3Blue1Brown | [https://www.youtube.com/watch?v=eu6i7WJeinw](https://www.youtube.com/watch?v=eu6i7WJeinw) |
-| **Lecture 16: Projection Matrices and Least Squares** (orthogonal projection) | MIT OpenCourseWare (Gilbert Strang) | [https://www.youtube.com/watch?v=osh80YCgGM4](https://www.youtube.com/watch?v=osh80YCgGM4) |
+1. **[Dot products and duality \| Chapter 9, Essence of linear algebra](https://www.youtube.com/watch?v=LyGKycYT2v0)** — 3Blue1Brown  
+   **Maps to §3.4:** Cosine, angle between vectors, **orthogonality** when dot product is zero.
+
+2. **[Cross products \| Chapter 10, Essence of linear algebra](https://www.youtube.com/watch?v=eu6i7WJeinw)** — 3Blue1Brown  
+   **Maps to §3.4 (optional):** Orthogonality and 90° geometry in $\mathbb{R}^3$ (cross product).
+
+3. **[Least squares approximation \| Linear Algebra \| Khan Academy](https://www.youtube.com/watch?v=MC7l96tW8V8)** — Khan Academy  
+   **Maps to §3.4:** **Orthogonal projection** and least squares (residuals orthogonal to column space).
 
 ---
 
 ## How to use
 
-§3.4’s $\cos\omega = \dfrac{\langle \mathbf{x},\mathbf{y}\rangle}{\|\mathbf{x}\|\|\mathbf{y}\|}$ is the core of **3Blue1Brown Ch. 9**. Strang’s **least squares** lecture ties **orthogonality of residuals** to projection (preview of Chapter 9 in MML).
+§3.4’s $\cos\omega = \dfrac{\langle \mathbf{x},\mathbf{y}\rangle}{\|\mathbf{x}\|\|\mathbf{y}\|}$ is the core of (1). Video (3) connects **orthogonality** to **projection** (preview of MML regression geometry).

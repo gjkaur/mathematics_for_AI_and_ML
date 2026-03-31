@@ -1,6 +1,6 @@
 # Day 1 — YouTube resources (by topic)
 
-Separate **README-style pages** for each Day 1 topic, with curated YouTube links. Use them **alongside** the textbook (*Mathematics for Machine Learning*) and the main notes in [`Day01/`](../).
+Each topic file lists **individual videos** with the **exact title shown on YouTube** (not just a channel name) and a short line mapping that video to the matching **MML section**. Use these **alongside** the textbook (*Mathematics for Machine Learning*) and the notes in [`Day01/`](../).
 
 | # | Topic | Videos file |
 |---|--------|----------------|
@@ -20,6 +20,4 @@ Separate **README-style pages** for each Day 1 topic, with curated YouTube links
 | 14 | Generating random datasets | [README-14-random-datasets.md](README-14-random-datasets.md) |
 | 15 | Smoothing noise | [README-15-smoothing-noise.md](README-15-smoothing-noise.md) |
 
-**Series used often:** [3Blue1Brown — Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), MIT OpenCourseWare (Gilbert Strang), StatQuest (stats / ML intuition).
-
-Videos are third-party; channels may update or geo-restrict. If a link breaks, search the exact title on YouTube.
+If a link breaks, search YouTube for the **exact title** in quotes.

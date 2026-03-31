@@ -4,16 +4,19 @@
 
 ---
 
-## Recommended videos
+## Videos (exact titles on YouTube)
 
-| Title | Channel | Link |
-|--------|---------|------|
-| **Lecture 2: Elimination with Matrices** (Gaussian elimination) | MIT OpenCourseWare (Gilbert Strang) | [https://www.youtube.com/watch?v=QVKj3LADCnA](https://www.youtube.com/watch?v=QVKj3LADCnA) |
-| **Inverse matrices, column space and null space | Chapter 7** | 3Blue1Brown | [https://www.youtube.com/watch?v=uQhTuRlWMxw](https://www.youtube.com/watch?v=uQhTuRlWMxw) |
-| **Nonsquare matrices | Chapter 8** (wide systems, tall systems) | 3Blue1Brown | [https://www.youtube.com/watch?v=v8VSDg_WQlA](https://www.youtube.com/watch?v=v8VSDg_WQlA) |
+1. **[2. Elimination with Matrices.](https://www.youtube.com/watch?v=QVKj3LADCnA)** — MIT OpenCourseWare (Gilbert Strang)  
+   **Maps to §2.3:** Gaussian elimination and elimination matrices (computational side of solving).
+
+2. **[Inverse matrices, column space and null space \| Chapter 7, Essence of linear algebra](https://www.youtube.com/watch?v=uQhTuRlWMxw)** — 3Blue1Brown  
+   **Maps to §2.3:** Solution sets: when $A\mathbf{x}=\mathbf{b}$ has zero, one, or infinitely many solutions.
+
+3. **[Nonsquare matrices as transformations between dimensions \| Chapter 8, Essence of linear algebra](https://www.youtube.com/watch?v=v8VSDg_WQlA)** — 3Blue1Brown  
+   **Maps to §2.3:** Tall vs wide systems and transformations between different dimensions.
 
 ---
 
 ## How to use
 
-Strang’s lecture matches **elimination** and **LU** intuition (as in the book). 3Blue1Brown links **column space** and **null space** to “solutions of $A\mathbf{x}=\mathbf{b}$”.
+Strang (1) matches **elimination**; 3Blue1Brown (2)–(3) match **existence and uniqueness** of solutions as in the book.

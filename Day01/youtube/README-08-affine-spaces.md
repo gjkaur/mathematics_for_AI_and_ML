@@ -4,17 +4,19 @@
 
 ---
 
-## Recommended videos
+## Videos (exact titles on YouTube)
 
-| Title | Channel | Link |
-|--------|---------|------|
-| **Linear transformations and matrices | Chapter 3** (linear subspace through origin; compare with “shifted” solution sets) | 3Blue1Brown | [https://www.youtube.com/watch?v=kYB8IZa5AuE](https://www.youtube.com/watch?v=kYB8IZa5AuE) |
-| **Inverse matrices, column space and null space | Chapter 7** ($\mathbf{x}_p + \mathcal{N}(A)$ as affine solution set) | 3Blue1Brown | [https://www.youtube.com/watch?v=uQhTuRlWMxw](https://www.youtube.com/watch?v=uQhTuRlWMxw) |
-| **Affine combinations** (search playlist for intuition) | 3Blue1Brown (same series; pair with Strang below) | [Essence of linear algebra playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) |
-| **Geometry of linear equations** (lines/planes: particular + homogeneous) | MIT OpenCourseWare (Gilbert Strang) | [https://www.youtube.com/watch?v=ZK3O402wf1c](https://www.youtube.com/watch?v=ZK3O402wf1c) |
+1. **[Linear transformations and matrices \| Chapter 3, Essence of linear algebra](https://www.youtube.com/watch?v=kYB8IZa5AuE)** — 3Blue1Brown  
+   **Maps to §2.8:** Linear subspaces **through the origin** — contrast with affine sets that are **translated**.
+
+2. **[Inverse matrices, column space and null space \| Chapter 7, Essence of linear algebra](https://www.youtube.com/watch?v=uQhTuRlWMxw)** — 3Blue1Brown  
+   **Maps to §2.8:** Full solution set $=$ **particular solution** $+$ **null space** (affine translate of a subspace).
+
+3. **[Lec 1 \| MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/watch?v=ZK3O402wf1c)** — MIT OpenCourseWare (Gilbert Strang)  
+   **Maps to §2.8:** Geometry of lines/planes from equations; particular plus homogeneous solutions.
 
 ---
 
 ## How to use
 
-Few playlists use the word “affine” in the title; pair **null space + particular solution** (3Blue1Brown Ch. 7) with Strang’s **geometry of equations** so “translate of a subspace” clicks.
+Few videos use the word “affine” in the title; (2)–(3) are the standard **particular + homogeneous** picture for §2.8.

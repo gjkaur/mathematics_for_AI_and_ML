@@ -4,15 +4,19 @@
 
 ---
 
-## Recommended videos
+## Videos (exact titles on YouTube)
 
-| Title | Channel | Link |
-|--------|---------|------|
-| **Dot products and duality | Chapter 9** (length $\|\mathbf{x}\|=\sqrt{\mathbf{x}\cdot\mathbf{x}}$) | 3Blue1Brown | [https://www.youtube.com/watch?v=LyGKycYT2v0](https://www.youtube.com/watch?v=LyGKycYT2v0) |
-| **Regularization Part 1: Ridge (L2)** / **Part 2: Lasso (L1)** (distance to origin in penalty geometry) | StatQuest | [Ridge (L2)](https://www.youtube.com/watch?v=Q81RR3yKn30) · [Lasso (L1)](https://www.youtube.com/watch?v=NGf0voTMlcs) |
+1. **[Dot products and duality \| Chapter 9, Essence of linear algebra](https://www.youtube.com/watch?v=LyGKycYT2v0)** — 3Blue1Brown  
+   **Maps to §3.3:** Length $\|\mathbf{x}\|=\sqrt{\mathbf{x}\cdot\mathbf{x}}$ and distance from the origin.
+
+2. **[Regularization Part 1: Ridge (L2) Regression](https://www.youtube.com/watch?v=Q81RR3yKn30)** — StatQuest with Josh Starmer  
+   **Maps to §3.3:** **$\ell_2$** distance-to-origin view of penalty terms in weight space.
+
+3. **[Regularization Part 2: Lasso (L1) Regression](https://www.youtube.com/watch?v=NGf0voTMlcs)** — StatQuest with Josh Starmer  
+   **Maps to §3.3:** **$\ell_1$** geometry (different “ball” shape → different distance contours).
 
 ---
 
 ## How to use
 
-**Distance** $d(\mathbf{x},\mathbf{y})=\|\mathbf{x}-\mathbf{y}\|$ follows once **norm** is understood. For **$L_1$ vs $L_2$ distance**, pair 3Blue1Brown (Euclidean) with StatQuest (norms in penalized regression).
+**Distance** $d(\mathbf{x},\mathbf{y})=\|\mathbf{x}-\mathbf{y}\|$ follows once the **norm** is fixed. Pair (1) with (2)–(3) for **Euclidean vs $\ell_1$** intuition.

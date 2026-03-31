@@ -4,22 +4,27 @@
 
 ---
 
-## Playlist (full course context)
+## Videos (exact titles on YouTube)
 
-- [3Blue1Brown — Essence of linear algebra (full playlist)](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — geometric view of vectors, matrices, and solutions.
+Each item is **one** video; the **bold link text** is copied from the YouTube title.
 
----
+1. **[Lec 1 \| MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/watch?v=ZK3O402wf1c)** — MIT OpenCourseWare (Gilbert Strang)  
+   **Maps to §2.1:** Row picture and column picture of $A\mathbf{x}=\mathbf{b}$; what a “system” means geometrically.
 
-## Recommended videos
+2. **[Vectors \| Chapter 1, Essence of linear algebra](https://www.youtube.com/watch?v=fNk_zzaMoSs)** — 3Blue1Brown  
+   **Maps to §2.1:** Vectors as the objects $\mathbf{x}$ in $A\mathbf{x}=\mathbf{b}$.
 
-| Title | Channel | Link |
-|--------|---------|------|
-| **The Geometry of Linear Equations** (systems as intersections of planes/lines) | MIT OpenCourseWare (Gilbert Strang) | [https://www.youtube.com/watch?v=ZK3O402wf1c](https://www.youtube.com/watch?v=ZK3O402wf1c) |
-| **Vectors | Chapter 1** (building blocks for $A\mathbf{x}=\mathbf{b}$) | 3Blue1Brown | [https://www.youtube.com/watch?v=fNk_zzaMoSs](https://www.youtube.com/watch?v=fNk_zzaMoSs) |
-| **Linear combinations, span, and basis vectors | Chapter 2** (what “multiple equations” mean geometrically) | 3Blue1Brown | [https://www.youtube.com/watch?v=k7RM-ot2NWY](https://www.youtube.com/watch?v=k7RM-ot2NWY) |
+3. **[Linear combinations, span, and basis vectors \| Chapter 2, Essence of linear algebra](https://www.youtube.com/watch?v=k7RM-ot2NWY)** — 3Blue1Brown  
+   **Maps to §2.1:** How several equations connect to span and combinations of columns of $A$.
 
 ---
 
 ## How to use
 
-Watch Strang first for **row picture / column picture** of $A\mathbf{x}=\mathbf{b}$, then 3Blue1Brown for **intuition**. Cross-check terminology with *Mathematics for Machine Learning* §2.1.
+Watch (1) for Strang’s **row/column** language, then (2)–(3) for **visual** vocabulary. Match symbols to *Mathematics for Machine Learning* §2.1.
+
+---
+
+## Optional full course
+
+[Essence of linear algebra (playlist)](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — only if you want the whole series; the three videos above are enough for §2.1.

@@ -4,16 +4,16 @@
 
 ---
 
-## Recommended videos
+## Videos (exact titles on YouTube)
 
-| Title | Channel | Link |
-|--------|---------|------|
-| **Dot products and duality | Chapter 9** | 3Blue1Brown | [https://www.youtube.com/watch?v=LyGKycYT2v0](https://www.youtube.com/watch?v=LyGKycYT2v0) |
-| **Cross products | Chapter 10** (optional: related geometric product in 3D) | 3Blue1Brown | [https://www.youtube.com/watch?v=eu6i7WJeinw](https://www.youtube.com/watch?v=eu6i7WJeinw) |
-| **Lecture 1: The Geometry of Linear Equations** (dot products appear in projections later in course) | MIT OpenCourseWare (Gilbert Strang) | [https://www.youtube.com/watch?v=ZK3O402wf1c](https://www.youtube.com/watch?v=ZK3O402wf1c) |
+1. **[Dot products and duality \| Chapter 9, Essence of linear algebra](https://www.youtube.com/watch?v=LyGKycYT2v0)** — 3Blue1Brown  
+   **Maps to §3.2:** Standard dot product, geometry, duality, Cauchy–Schwarz intuition.
+
+2. **[Cross products \| Chapter 10, Essence of linear algebra](https://www.youtube.com/watch?v=eu6i7WJeinw)** — 3Blue1Brown  
+   **Maps to §3.2 (optional):** Another product on vectors in $\mathbb{R}^3$ (contrast with inner product).
 
 ---
 
 ## How to use
 
-The **Essence of Linear Algebra** Ch. 9 video is the main match for §3.2 (standard dot product, geometry, Cauchy–Schwarz intuition).
+Video (1) is the main match for §3.2 (standard inner product on $\mathbb{R}^n$). Video (2) is optional geometric contrast.

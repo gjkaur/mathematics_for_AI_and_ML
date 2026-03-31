@@ -4,22 +4,19 @@
 
 ---
 
-## Recommended videos
+## Videos (exact titles on YouTube)
 
-| Title | Channel | Link |
-|--------|---------|------|
-| **Convolution** (local weighted sums — conceptual link to smoothing and filters) | 3Blue1Brown | [https://www.youtube.com/watch?v=KuXjwB4LzSA](https://www.youtube.com/watch?v=KuXjwB4LzSA) |
-| **The Normal Distribution, Clearly Explained!!!** (Gaussian noise in regression) | StatQuest | [https://www.youtube.com/watch?v=rzFX5NWojp0](https://www.youtube.com/watch?v=rzFX5NWojp0) |
-| **Principal Component Analysis (PCA) clearly explained** (variance / low-rank signal) | StatQuest | [https://www.youtube.com/watch?v=_UVHneBUBW0](https://www.youtube.com/watch?v=_UVHneBUBW0) |
+1. **[But what is a convolution?](https://www.youtube.com/watch?v=KuXjwB4LzSA)** — 3Blue1Brown  
+   **Maps to Ch. 6 / 9:** **Local weighted sums** (convolution) — same idea as many **smoothers** and filters in signal and noise.
+
+2. **[The Normal Distribution, Clearly Explained!!!](https://www.youtube.com/watch?v=rzFX5NWojp0)** — StatQuest with Josh Starmer  
+   **Maps to Ch. 9:** **Gaussian noise** in regression and likelihood models.
+
+3. **[Principal Component Analysis (PCA) clearly explained (2015)](https://www.youtube.com/watch?v=_UVHneBUBW0)** — StatQuest with Josh Starmer  
+   **Maps to Ch. 10:** **Variance** and low-dimensional **signal** vs noise (PCA as a variance-based summary).
 
 ---
 
 ## How to use
 
-**Smoothing** spans simple **moving averages** (time series), **convolution-style** local averaging (see 3Blue1Brown), and **model-based** smoothing (regression, PCA). Align the video level with what your instructor means by “smooth” (local vs global).
-
----
-
-## Note
-
-If a link breaks, search the channel for **“StatQuest PCA”** or **“moving average”** on YouTube.
+**Smoothing** can mean **local averaging** (1), **distributional** noise models (2), or **global** variance reduction (3). Use whichever matches your instructor’s definition of “smooth.”

@@ -4,22 +4,19 @@
 
 ---
 
-## Recommended videos
+## Videos (exact titles on YouTube)
 
-| Title | Channel | Link |
-|--------|---------|------|
-| **Z-score introduction** (standardizing and flagging unusual values) | Khan Academy | [https://www.youtube.com/watch?v=5S-Zfa-vOXs](https://www.youtube.com/watch?v=5S-Zfa-vOXs) |
-| **Fitting a line / least squares** (residuals and what “far from the line” means) | StatQuest | [https://www.youtube.com/watch?v=PaFPbb66DxQ](https://www.youtube.com/watch?v=PaFPbb66DxQ) |
-| **The Geometry of Linear Equations** (how “bad” points move a fit) | MIT OpenCourseWare (Gilbert Strang) | [https://www.youtube.com/watch?v=ZK3O402wf1c](https://www.youtube.com/watch?v=ZK3O402wf1c) |
+1. **[Z-score introduction \| Modeling data distributions \| AP Statistics \| Khan Academy](https://www.youtube.com/watch?v=5S-Zfa-vOXs)** — Khan Academy  
+   **Maps to Ch. 6 / cleaning:** Standardizing values and flagging **unusual** points via $z$-scores.
+
+2. **[The Main Ideas of Fitting a Line to Data (The Main Ideas of Least Squares and Linear Regression.)](https://www.youtube.com/watch?v=PaFPbb66DxQ)** — StatQuest with Josh Starmer  
+   **Maps to Ch. 9:** **Residuals** and what “far from the fitted line” means.
+
+3. **[Lec 1 \| MIT 18.06 Linear Algebra, Spring 2005](https://www.youtube.com/watch?v=ZK3O402wf1c)** — MIT OpenCourseWare (Gilbert Strang)  
+   **Maps to Ch. 8–9:** **Geometry of linear equations** — how inconsistent or noisy points relate to **fit** in $\mathbb{R}^n$.
 
 ---
 
 ## How to use
 
-MML does not use one “data cleaning” chapter; combine **probability** (what “extreme” means), **residuals** from regression, and your **domain** rules. StatQuest gives short **statistics** intuition; Strang links **geometry** of fitting.
-
----
-
-## Note
-
-If a link stops working, search **YouTube** for the same video title or for `StatQuest least squares` / `Khan Academy z-score`.
+MML has no single “data cleaning” chapter; combine **standardization** (1), **residuals** (2), and **geometry of fits** (3).
