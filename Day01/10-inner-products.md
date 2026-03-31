@@ -34,9 +34,12 @@ A map $\langle \cdot , \cdot \rangle : V \times V \to \mathbb{R}$ on a real vect
 
 **Standard dot product on $\mathbb{R}^n$:**
 
-$$
+
+```math
 \langle \mathbf{x}, \mathbf{y} \rangle = \mathbf{x}^\top \mathbf{y} = \sum_{i=1}^{n} x_i y_i.
-$$
+
+```
+
 
 ---
 
@@ -44,19 +47,25 @@ $$
 
 Every inner product induces a **norm**:
 
-$$
+
+```math
 \|\mathbf{x}\| = \sqrt{\langle \mathbf{x}, \mathbf{x} \rangle}.
-$$
+
+```
+
 
 For the dot product, this is the **Euclidean** $L_2$ norm.
 
 **Example:**
 
-$$
+
+```math
 \mathbf{x} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad
 \langle \mathbf{x}, \mathbf{x} \rangle = 1 + 4 = 5, \quad
 \|\mathbf{x}\| = \sqrt{5}.
-$$
+
+```
+
 
 ---
 
@@ -64,9 +73,12 @@ $$
 
 Let $\mathbf{x} = (1,2)^\top$ and $\mathbf{y} = (3,-1)^\top$. Then
 
-$$
+
+```math
 \langle \mathbf{x}, \mathbf{y} \rangle = 1\cdot 3 + 2\cdot(-1) = 3 - 2 = 1.
-$$
+
+```
+
 
 ---
 
@@ -74,17 +86,23 @@ $$
 
 For any $\mathbf{x},\mathbf{y}$ in an inner product space,
 
-$$
+
+```math
 |\langle \mathbf{x}, \mathbf{y} \rangle| \le \|\mathbf{x}\| \, \|\mathbf{y}\|.
-$$
+
+```
+
 
 **Equality** holds if and only if $\mathbf{x}$ and $\mathbf{y}$ are **linearly dependent** (one is a scalar multiple of the other).
 
 **Check with the previous example:**
 
-$$
+
+```math
 \|\mathbf{x}\| = \sqrt{5}, \quad \|\mathbf{y}\| = \sqrt{10}, \quad \|\mathbf{x}\|\|\mathbf{y}\| = \sqrt{50} \approx 7.07, \quad |1| \le 7.07 \quad \checkmark
-$$
+
+```
+
 
 ---
 
@@ -92,9 +110,12 @@ $$
 
 If $A$ is **symmetric positive definite (SPD)**, then
 
-$$
+
+```math
 \langle \mathbf{x}, \mathbf{y} \rangle_A = \mathbf{x}^\top A \mathbf{y}
-$$
+
+```
+
 
 is also an inner product. It weights different directions differently (ellipsoidal geometry).
 
@@ -114,12 +135,15 @@ is also an inner product. It weights different directions differently (ellipsoid
 
 ### Example A — Expand $\|\mathbf{x}+\mathbf{y}\|_2^2$
 
-$$
+
+```math
 \|\mathbf{x}+\mathbf{y}\|_2^2
 = (\mathbf{x}+\mathbf{y})^\top(\mathbf{x}+\mathbf{y})
 = \mathbf{x}^\top\mathbf{x} + 2\mathbf{x}^\top\mathbf{y} + \mathbf{y}^\top\mathbf{y}
 = \|\mathbf{x}\|_2^2 + 2\langle \mathbf{x},\mathbf{y}\rangle + \|\mathbf{y}\|_2^2.
-$$
+
+```
+
 
 If $\mathbf{x} \perp \mathbf{y}$, then $\langle \mathbf{x},\mathbf{y}\rangle=0$ and **Pythagoras** holds: $\|\mathbf{x}+\mathbf{y}\|_2^2 = \|\mathbf{x}\|_2^2 + \|\mathbf{y}\|_2^2$.
 
@@ -129,11 +153,14 @@ If $\mathbf{x} \perp \mathbf{y}$, then $\langle \mathbf{x},\mathbf{y}\rangle=0$ 
 
 $\mathbf{x} = (2,4)^\top$, $\mathbf{y} = (1,2)^\top$. Here $\mathbf{x} = 2\mathbf{y}$, so they are **collinear**.
 
-$$
+
+```math
 \langle \mathbf{x},\mathbf{y}\rangle = 2+8 = 10, \quad
 \|\mathbf{x}\|_2 = \sqrt{20},\quad \|\mathbf{y}\|_2 = \sqrt{5},\quad
 \|\mathbf{x}\|_2\|\mathbf{y}\|_2 = \sqrt{100} = 10.
-$$
+
+```
+
 
 So $|\langle \mathbf{x},\mathbf{y}\rangle| = \|\mathbf{x}\|_2\|\mathbf{y}\|_2$ — **equality** in Cauchy–Schwarz.
 
@@ -143,7 +170,8 @@ So $|\langle \mathbf{x},\mathbf{y}\rangle| = \|\mathbf{x}\|_2\|\mathbf{y}\|_2$ �
 
 Let $A = \begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix}$ (SPD). For $\mathbf{x}=(1,1)^\top$, $\mathbf{y}=(1,-1)^\top$:
 
-$$
+
+```math
 \langle \mathbf{x},\mathbf{y}\rangle_A = \mathbf{x}^\top A \mathbf{y}
 = \begin{bmatrix}1&1\end{bmatrix}
 \begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix}
@@ -151,7 +179,9 @@ $$
 = \begin{bmatrix}1&1\end{bmatrix}
 \begin{bmatrix} 2 \\ -1 \end{bmatrix}
 = 1.
-$$
+
+```
+
 
 ---
 

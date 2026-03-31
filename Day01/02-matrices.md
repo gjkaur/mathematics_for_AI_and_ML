@@ -27,15 +27,21 @@ A **matrix** is a rectangular array of real (or complex) numbers. Matrices encod
 
 An **$m \times n$ matrix** $A$ has **$m$ rows** and **$n$ columns**. The entry in **row $i$**, **column $j$** is denoted
 
-$$
+
+```math
 A = [a_{ij}]_{i=1,\ldots,m;\; j=1,\ldots,n}.
-$$
+
+```
+
 
 **Example ($2 \times 2$):**
 
-$$
+
+```math
 A = \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix}.
-$$
+
+```
+
 
 ---
 
@@ -46,17 +52,23 @@ $$
 
 The **transpose** $A^\top$ swaps rows and columns:
 
-$$
+
+```math
 (A^\top)_{ij} = A_{ji}.
-$$
+
+```
+
 
 **Numerical example:**
 
-$$
+
+```math
 A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}
 \quad\Rightarrow\quad
 A^\top = \begin{bmatrix} 1 & 3 \\ 2 & 4 \end{bmatrix}.
-$$
+
+```
+
 
 ---
 
@@ -64,25 +76,34 @@ $$
 
 If $A$ is $m \times n$ and $\mathbf{x}$ is $n \times 1$, the product $\mathbf{y} = A\mathbf{x}$ is $m \times 1$. The **$i$-th component** is the **dot product** of **row $i$ of $A$** with $\mathbf{x}$:
 
-$$
+
+```math
 y_i = \sum_{j=1}^{n} a_{ij} x_j, \qquad i = 1,\ldots,m.
-$$
+
+```
+
 
 **Worked example:**
 
-$$
+
+```math
 A = \begin{bmatrix} 1 & 2 \\ 0 & -1 \end{bmatrix}, \quad
 \mathbf{x} = \begin{bmatrix} 3 \\ 1 \end{bmatrix}.
-$$
+
+```
+
 
 - Row 1: $y_1 = 1 \cdot 3 + 2 \cdot 1 = 5$.
 - Row 2: $y_2 = 0 \cdot 3 + (-1) \cdot 1 = -1$.
 
 Hence
 
-$$
+
+```math
 A\mathbf{x} = \begin{bmatrix} 5 \\ -1 \end{bmatrix}.
-$$
+
+```
+
 
 ---
 
@@ -90,15 +111,19 @@ $$
 
 If $A$ is $m \times n$ and $B$ is $n \times p$, then $C = AB$ is $m \times p$ with entries
 
-$$
+
+```math
 c_{ik} = \sum_{j=1}^{n} a_{ij} b_{jk}.
-$$
+
+```
+
 
 **Interpretation:** Column $k$ of $AB$ equals $A$ times column $k$ of $B$.
 
 **Worked example:**
 
-$$
+
+```math
 \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}
 \begin{bmatrix} 2 & 0 \\ 1 & 3 \end{bmatrix}
 =
@@ -108,7 +133,9 @@ $$
 \end{bmatrix}
 =
 \begin{bmatrix} 3 & 3 \\ 1 & 3 \end{bmatrix}.
-$$
+
+```
+
 
 **Important:** In general **$AB \neq BA$** (even when both products exist).
 
@@ -124,9 +151,12 @@ $$
 
 For $I_2$:
 
-$$
+
+```math
 I_2 = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}.
-$$
+
+```
+
 
 ---
 
@@ -134,9 +164,12 @@ $$
 
 If $\Phi(\mathbf{x}) = A\mathbf{x}$, then for scalars $\alpha,\beta$ and vectors $\mathbf{u},\mathbf{v}$,
 
-$$
+
+```math
 \Phi(\alpha \mathbf{u} + \beta \mathbf{v}) = \alpha \Phi(\mathbf{u}) + \beta \Phi(\mathbf{v}),
-$$
+
+```
+
 
 because matrix multiplication distributes over addition and commutes with scalar multiplication. So **every matrix $A$ defines a linear map**; see note **07** for image, kernel, and composition.
 
@@ -150,14 +183,18 @@ because matrix multiplication distributes over addition and commutes with scalar
 
 Let
 
-$$
+
+```math
 A = \begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix}, \quad
 B = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}.
-$$
+
+```
+
 
 **Compute $AB$:**
 
-$$
+
+```math
 AB =
 \begin{bmatrix}
 1\cdot 0 + 2\cdot 1 & 1\cdot 1 + 2\cdot 0 \\
@@ -165,11 +202,14 @@ AB =
 \end{bmatrix}
 =
 \begin{bmatrix} 2 & 1 \\ 1 & 0 \end{bmatrix}.
-$$
+
+```
+
 
 **Compute $BA$:**
 
-$$
+
+```math
 BA =
 \begin{bmatrix}
 0\cdot 1 + 1\cdot 0 & 0\cdot 2 + 1\cdot 1 \\
@@ -177,7 +217,9 @@ BA =
 \end{bmatrix}
 =
 \begin{bmatrix} 0 & 1 \\ 1 & 2 \end{bmatrix}.
-$$
+
+```
+
 
 So $AB \neq BA$.
 
@@ -187,7 +229,8 @@ So $AB \neq BA$.
 
 Three examples with two features (plus bias as third coordinate). Stack them as rows:
 
-$$
+
+```math
 X =
 \begin{bmatrix}
 1 & x_1^{(1)} & x_2^{(1)} \\
@@ -205,7 +248,9 @@ X =
 \begin{bmatrix} b \\ w_1 \\ w_2 \end{bmatrix}
 =
 \begin{bmatrix} 1 \\ 2 \\ -1 \end{bmatrix}.
-$$
+
+```
+
 
 Predictions $\hat{\mathbf{y}} = X\boldsymbol{\theta}$:
 
@@ -221,11 +266,14 @@ So $\hat{\mathbf{y}} = (0,\,3,\,4)^\top$. This is the same pattern as **linear r
 
 If $S = \begin{bmatrix} 2 & -1 \\ -1 & 3 \end{bmatrix}$, then $S^\top = S$ (**symmetric**). For any $\mathbf{x}$,
 
-$$
+
+```math
 \mathbf{x}^\top S \mathbf{x} = \begin{bmatrix} x_1 & x_2 \end{bmatrix}
 \begin{bmatrix} 2x_1 - x_2 \\ -x_1 + 3x_2 \end{bmatrix}
 = 2x_1^2 - 2x_1 x_2 + 3x_2^2,
-$$
+
+```
+
 
 a **quadratic form** used later with inner products and optimization.
 

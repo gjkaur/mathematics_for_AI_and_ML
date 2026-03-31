@@ -8,22 +8,20 @@ Every topic note begins with **Why learn this?** — motivation, **where the ide
 
 ## How to read the math
 
-Math is written in **LaTeX** using:
+These notes are formatted for **GitHub Flavored Markdown** math ([MathJax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)):
 
 - **Inline:** `$ ... $` (e.g. `$A\mathbf{x}=\mathbf{b}$`)
-- **Display:** `$$ ... $$` on their own lines, with a **blank line before and after** each display block (helps parsers, including GitHub’s)
+- **Display:** GitHub **math** code fences: an opening line `` ```math ``, the formula, then a closing line `` ``` `` on its own (see the example below).
 
-for formulas such as:
+Example:
 
-$$
+```math
 \mathbf{y} = A\mathbf{x}\,, \quad \|\mathbf{x}\|_2 = \sqrt{\mathbf{x}^\top\mathbf{x}}\,.
-$$
+```
 
-**On GitHub:** Open any topic `.md` file in the **normal file view** on [github.com](https://github.com) (not **Raw**). GitHub renders `$...$` and `$$...$$` using **MathJax**—see the official guide: [Writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
+**On GitHub:** Open any topic `.md` in the **normal file view** (not **Raw**). **Locally:** VS Code with a math-capable Markdown preview, Obsidian, Typora, Jupyter, etc.
 
-**Locally:** **VS Code** with a Markdown+Math extension, **Obsidian**, **Typora**, **Jupyter**, or any preview that supports LaTeX-style math.
-
-The short **YouTube companion** pages under [`youtube/`](youtube/README.md) use plain Unicode for one-line snippets so those lists stay compact; the **topic notes** in this folder keep full LaTeX.
+The **YouTube companion** pages under [`youtube/`](youtube/README.md) use plain Unicode for short lines; the **topic notes** here use full LaTeX in inline `$...$` and in display math fences as shown above.
 
 ---
 

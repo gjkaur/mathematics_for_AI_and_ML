@@ -27,9 +27,12 @@ A **linear subspace** must contain $\mathbf{0}$. Many geometric objects in ML—
 
 Let $U$ be a linear subspace of $\mathbb{R}^n$ and $\mathbf{x}_0 \in \mathbb{R}^n$. The set
 
-$$
+
+```math
 \mathcal{A} = \mathbf{x}_0 + U = \{ \mathbf{x}_0 + \mathbf{u} \mid \mathbf{u} \in U \}
-$$
+
+```
+
 
 is an **affine subspace** (parallel to $U$). Its **dimension** is $\dim(U)$.
 
@@ -45,19 +48,25 @@ is an **affine subspace** (parallel to $U$). Its **dimension** is $\dim(U)$.
 
 Given points $\mathbf{x}_1,\ldots,\mathbf{x}_k$, an **affine combination** is
 
-$$
+
+```math
 \sum_{i=1}^{k} \lambda_i \mathbf{x}_i
 \quad\text{with}\quad
 \sum_{i=1}^{k} \lambda_i = 1.
-$$
+
+```
+
 
 Coefficients are **not** arbitrary scalars—they must sum to $1$. The **affine hull** of a set is all such combinations.
 
 **Example — midpoint:**
 
-$$
+
+```math
 \frac{1}{2}\mathbf{a} + \frac{1}{2}\mathbf{b}
-$$
+
+```
+
 
 has weights $1/2 + 1/2 = 1$, so it lies on the line through $\mathbf{a}$ and $\mathbf{b}$.
 
@@ -67,27 +76,36 @@ has weights $1/2 + 1/2 = 1$, so it lies on the line through $\mathbf{a}$ and $\m
 
 Suppose $\mathbf{x}_p$ satisfies $A\mathbf{x}_p = \mathbf{b}$ (**particular solution**). Then **every** solution has the form
 
-$$
+
+```math
 \mathbf{x} = \mathbf{x}_p + \mathbf{h}, \qquad A\mathbf{h} = \mathbf{0}.
-$$
+
+```
+
 
 So the solution set is **$\mathbf{x}_p + \mathcal{N}(A)$**, an affine space parallel to the **null space** $\mathcal{N}(A)$.
 
 **Worked example:**
 
-$$
+
+```math
 A = \begin{bmatrix} 1 & 1 \\ 2 & 2 \end{bmatrix}, \quad
 \mathbf{b} = \begin{bmatrix} 2 \\ 4 \end{bmatrix}.
-$$
+
+```
+
 
 - Particular solution: $\mathbf{x}_p = (1,1)^\top$ since $1+1=2$ and $2+2=4$.
 - Null space: $h_1+h_2=0$, so $\mathbf{h} = t(1,-1)^\top$, $t \in \mathbb{R}$.
 
 **All solutions:**
 
-$$
+
+```math
 \mathbf{x} = \begin{bmatrix} 1 \\ 1 \end{bmatrix} + t \begin{bmatrix} 1 \\ -1 \end{bmatrix}, \quad t \in \mathbb{R}.
-$$
+
+```
+
 
 This is a **line** in $\mathbb{R}^2$ (verify: it satisfies $x_1+x_2=2$).
 
@@ -108,15 +126,21 @@ This is a **line** in $\mathbb{R}^2$ (verify: it satisfies $x_1+x_2=2$).
 
 Let $\mathbf{a} = (0,1)^\top$ and $\mathbf{b} = (2,3)^\top$. The line through $\mathbf{a}$ and $\mathbf{b}$ is
 
-$$
+
+```math
 \mathbf{x}(t) = (1-t)\mathbf{a} + t\mathbf{b}, \quad t \in \mathbb{R}.
-$$
+
+```
+
 
 This is an **affine combination** because $(1-t)+t=1$. For $t=0$ you get $\mathbf{a}$; for $t=1$ you get $\mathbf{b}$. Expand:
 
-$$
+
+```math
 \mathbf{x}(t) = (2t,\, 1+2t)^\top.
-$$
+
+```
+
 
 ---
 
@@ -124,10 +148,13 @@ $$
 
 Solve $A\mathbf{x}=\mathbf{b}$ with
 
-$$
+
+```math
 A = \begin{bmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \end{bmatrix}, \quad
 \mathbf{b} = \begin{bmatrix} 5 \\ 3 \end{bmatrix}.
-$$
+
+```
+
 
 **Particular:** try $x_3=0$: then $x_2=3$, $x_1+x_2=5 \Rightarrow x_1=2$. So $\mathbf{x}_p=(2,3,0)^\top$.
 
@@ -135,10 +162,13 @@ $$
 
 **General solution:**
 
-$$
+
+```math
 \mathbf{x} = \begin{bmatrix} 2 \\ 3 \\ 0 \end{bmatrix}
 + t \begin{bmatrix} 1 \\ -1 \\ 1 \end{bmatrix}, \quad t \in \mathbb{R}.
-$$
+
+```
+
 
 ---
 

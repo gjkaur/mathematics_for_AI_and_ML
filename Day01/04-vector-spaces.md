@@ -27,26 +27,35 @@ A **vector space** (over $\mathbb{R}$) is a set where you can **add** vectors an
 
 **$\mathbb{R}^n$** is the set of all **column vectors** with $n$ real components:
 
-$$
+
+```math
 \mathbf{x} = \begin{bmatrix} x_1 \\ \vdots \\ x_n \end{bmatrix}, \quad x_i \in \mathbb{R}.
-$$
+
+```
+
 
 **Addition** and **scalar multiplication** are defined **componentwise**:
 
-$$
+
+```math
 \mathbf{u} + \mathbf{v} = \begin{bmatrix} u_1 + v_1 \\ \vdots \\ u_n + v_n \end{bmatrix}, \qquad
 \alpha \mathbf{u} = \begin{bmatrix} \alpha u_1 \\ \vdots \\ \alpha u_n \end{bmatrix}.
-$$
+
+```
+
 
 **Example:**
 
-$$
+
+```math
 \mathbf{u} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad
 \mathbf{v} = \begin{bmatrix} 3 \\ -1 \end{bmatrix}
 \quad\Rightarrow\quad
 \mathbf{u}+\mathbf{v} = \begin{bmatrix} 4 \\ 1 \end{bmatrix}, \quad
 3\mathbf{u} = \begin{bmatrix} 3 \\ 6 \end{bmatrix}.
-$$
+
+```
+
 
 ---
 
@@ -68,10 +77,13 @@ A subset $U \subseteq \mathbb{R}^n$ is a **(linear) subspace** if:
 
 Given $\mathbf{v}_1,\ldots,\mathbf{v}_k \in \mathbb{R}^n$, their **span** is the set of **all linear combinations**:
 
-$$
+
+```math
 \operatorname{span}\{\mathbf{v}_1,\ldots,\mathbf{v}_k\}
 = \left\{ \alpha_1 \mathbf{v}_1 + \cdots + \alpha_k \mathbf{v}_k \;\middle|\; \alpha_i \in \mathbb{R} \right\}.
-$$
+
+```
+
 
 The span is always a **subspace** of $\mathbb{R}^n$.
 
@@ -115,9 +127,12 @@ Let $\mathbf{v}_1 = (1,1)^\top$ and $\mathbf{v}_2 = (1,-1)^\top$. Write $\mathbf
 
 Solve
 
-$$
+
+```math
 \alpha_1 + \alpha_2 = 0, \quad \alpha_1 - \alpha_2 = 4.
-$$
+
+```
+
 
 Add: $2\alpha_1 = 4 \Rightarrow \alpha_1 = 2$. Then $\alpha_2 = -2$. **Check:** $2(1,1) - 2(1,-1) = (0,4)^\top$. So $\mathbf{b} \in \operatorname{span}\{\mathbf{v}_1,\mathbf{v}_2\}$ (and in fact $\{\mathbf{v}_1,\mathbf{v}_2\}$ spans all of $\mathbb{R}^2$).
 
@@ -127,17 +142,23 @@ Add: $2\alpha_1 = 4 \Rightarrow \alpha_1 = 2$. Then $\alpha_2 = -2$. **Check:** 
 
 For $A = \begin{bmatrix} 1 & 2 & -1 \end{bmatrix}$ (a $1 \times 3$ matrix), solve $A\mathbf{x} = 0$:
 
-$$
+
+```math
 x_1 + 2x_2 - x_3 = 0 \quad\Rightarrow\quad x_3 = x_1 + 2x_2.
-$$
+
+```
+
 
 With free parameters $x_1 = s$, $x_2 = t$:
 
-$$
+
+```math
 \mathbf{x} = \begin{bmatrix} s \\ t \\ s+2t \end{bmatrix}
 = s\begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}
 + t\begin{bmatrix} 0 \\ 1 \\ 2 \end{bmatrix}.
-$$
+
+```
+
 
 So $\mathcal{N}(A)$ is a **2-dimensional** subspace of $\mathbb{R}^3$ (a plane through the origin).
 

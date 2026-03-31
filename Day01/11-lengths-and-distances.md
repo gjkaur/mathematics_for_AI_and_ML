@@ -27,17 +27,23 @@
 
 The **Euclidean length** of $\mathbf{x} \in \mathbb{R}^n$ is
 
-$$
+
+```math
 \|\mathbf{x}\|_2 = \sqrt{\mathbf{x}^\top \mathbf{x}} = \sqrt{\sum_{i=1}^n x_i^2}.
-$$
+
+```
+
 
 **Example:**
 
-$$
+
+```math
 \mathbf{x} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}
 \quad\Rightarrow\quad
 \|\mathbf{x}\|_2 = \sqrt{9+16} = 5.
-$$
+
+```
+
 
 More generally, **length** means $\|\mathbf{x}\|$ for whichever norm is chosen (note **09**).
 
@@ -47,15 +53,21 @@ More generally, **length** means $\|\mathbf{x}\|$ for whichever norm is chosen (
 
 If $\|\cdot\|$ is a norm, the **induced distance** is
 
-$$
+
+```math
 d(\mathbf{x}, \mathbf{y}) = \|\mathbf{x} - \mathbf{y}\|.
-$$
+
+```
+
 
 **Euclidean distance ($L_2$):**
 
-$$
+
+```math
 d_2(\mathbf{x}, \mathbf{y}) = \sqrt{\sum_{i=1}^n (x_i - y_i)^2}.
-$$
+
+```
+
 
 ---
 
@@ -63,10 +75,13 @@ $$
 
 Let $\mathbf{x} = (1,0)^\top$ and $\mathbf{y} = (4,4)^\top$. Then
 
-$$
+
+```math
 \mathbf{x} - \mathbf{y} = \begin{bmatrix} -3 \\ -4 \end{bmatrix}, \quad
 d_2(\mathbf{x},\mathbf{y}) = \sqrt{(-3)^2 + (-4)^2} = \sqrt{9+16} = 5.
-$$
+
+```
+
 
 So the points are **5 units apart** in Euclidean geometry.
 
@@ -78,15 +93,21 @@ Using $\mathbf{x} - \mathbf{y} = (-3,-4)^\top$:
 
 **Manhattan ($L_1$):**
 
-$$
+
+```math
 d_1(\mathbf{x},\mathbf{y}) = |-3| + |-4| = 7.
-$$
+
+```
+
 
 **Chebyshev ($L_\infty$):**
 
-$$
+
+```math
 d_\infty(\mathbf{x},\mathbf{y}) = \max(|-3|, |-4|) = 4.
-$$
+
+```
+
 
 So “how far apart” $\mathbf{x}$ and $\mathbf{y}$ are **depends on the norm**.
 
@@ -120,9 +141,12 @@ These properties justify using distance in **algorithms** (nearest neighbor, clu
 
 The **distance** from $\mathbf{x}$ to $\mathbf{0}$ is $d(\mathbf{x},\mathbf{0}) = \|\mathbf{x}-\mathbf{0}\| = \|\mathbf{x}\|$. For $\mathbf{x}=(1,2,2)^\top$:
 
-$$
+
+```math
 d_2(\mathbf{x},\mathbf{0}) = \sqrt{1+4+4} = 3.
-$$
+
+```
+
 
 ---
 
@@ -130,9 +154,12 @@ $$
 
 Points $\mathbf{p}=(0,0)^\top$, $\mathbf{q}_1=(1,0)^\top$, $\mathbf{q}_2=(0,2)^\top$.
 
-$$
+
+```math
 d_2(\mathbf{p},\mathbf{q}_1) = 1, \quad d_2(\mathbf{p},\mathbf{q}_2) = 2.
-$$
+
+```
+
 
 So $\mathbf{q}_1$ is the **nearest** neighbor under Euclidean distance.
 

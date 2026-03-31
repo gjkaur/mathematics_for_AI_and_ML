@@ -21,9 +21,12 @@ Training often requires **solving** or **repeatedly approximately solving** line
 
 Given $A \in \mathbb{R}^{m \times n}$ and $\mathbf{b} \in \mathbb{R}^m$, we want all $\mathbf{x} \in \mathbb{R}^n$ such that
 
-$$
+
+```math
 A\mathbf{x} = \mathbf{b}.
-$$
+
+```
+
 
 The textbook emphasizes **Gaussian elimination**, **row echelon form (REF)**, **reduced row echelon form (RREF)**, and—when $m = n$ and $A$ is invertible—the **inverse matrix** $A^{-1}$.
 
@@ -47,46 +50,61 @@ You reduce $[A \mid \mathbf{b}]$ to **row echelon form** or **reduced row echelo
 
 Solve
 
-$$
+
+```math
 \begin{cases}
 x + y + z = 6, \\
 2x - y + z = 3, \\
 x + 2y - z = 2.
 \end{cases}
-$$
+
+```
+
 
 **Augmented matrix:**
 
-$$
+
+```math
 \left[\begin{array}{ccc|c}
 1 & 1 & 1 & 6 \\
 2 & -1 & 1 & 3 \\
 1 & 2 & -1 & 2
 \end{array}\right].
-$$
+
+```
+
 
 **Step 1 — Clear below the first pivot:**  
 $R_2 \leftarrow R_2 - 2R_1$, $R_3 \leftarrow R_3 - R_1$:
 
-$$
+
+```math
 \left[\begin{array}{ccc|c}
 1 & 1 & 1 & 6 \\
 0 & -3 & -1 & -9 \\
 0 & 1 & -2 & -4
 \end{array}\right].
-$$
+
+```
+
 
 **Step 2 — Continue elimination** (swap rows if convenient, eliminate second column, etc.). After completing elimination and back substitution (full steps in the textbook), one obtains the **unique** solution
 
-$$
+
+```math
 x = 1, \quad y = 2, \quad z = 3.
-$$
+
+```
+
 
 **Check:**
 
-$$
+
+```math
 1+2+3=6,\quad 2(1)-(2)+3=3,\quad 1+2(2)-3=2.
-$$
+
+```
+
 
 ---
 
@@ -94,30 +112,42 @@ $$
 
 If $m = n$ and $A$ is **invertible** (nonsingular), there is **exactly one** solution:
 
-$$
+
+```math
 \mathbf{x} = A^{-1}\mathbf{b}.
-$$
+
+```
+
 
 **$2 \times 2$ inverse formula:** For $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$ with $\det(A) = ad - bc \neq 0$,
 
-$$
+
+```math
 A^{-1} = \frac{1}{ad-bc}\begin{bmatrix} d & -b \\ -c & a \end{bmatrix}.
-$$
+
+```
+
 
 **Numerical example:**
 
-$$
+
+```math
 A = \begin{bmatrix} 2 & 0 \\ 0 & 3 \end{bmatrix}, \quad
 \mathbf{b} = \begin{bmatrix} 4 \\ 9 \end{bmatrix}.
-$$
+
+```
+
 
 Here
 
-$$
+
+```math
 A^{-1} = \begin{bmatrix} 1/2 & 0 \\ 0 & 1/3 \end{bmatrix},
 \quad
 \mathbf{x} = A^{-1}\mathbf{b} = \begin{bmatrix} 2 \\ 3 \end{bmatrix}.
-$$
+
+```
+
 
 ---
 
@@ -141,33 +171,42 @@ If rows or columns of $A$ are **linearly dependent**, then $\det(A) = 0$ (for sq
 
 Solve the system from §2 above (same as the opening worked example). Augmented matrix after $R_2 \leftarrow R_2 - 2R_1$, $R_3 \leftarrow R_3 - R_1$:
 
-$$
+
+```math
 \left[\begin{array}{ccc|c}
 1 & 1 & 1 & 6 \\
 0 & -3 & -1 & -9 \\
 0 & 1 & -2 & -4
 \end{array}\right].
-$$
+
+```
+
 
 **Step 1 — Swap $R_2 \leftrightarrow R_3$** (optional; gives a $+1$ pivot in row 2):
 
-$$
+
+```math
 \left[\begin{array}{ccc|c}
 1 & 1 & 1 & 6 \\
 0 & 1 & -2 & -4 \\
 0 & -3 & -1 & -9
 \end{array}\right].
-$$
+
+```
+
 
 **Step 2 — $R_3 \leftarrow R_3 + 3R_2$:**
 
-$$
+
+```math
 \left[\begin{array}{ccc|c}
 1 & 1 & 1 & 6 \\
 0 & 1 & -2 & -4 \\
 0 & 0 & -7 & -21
 \end{array}\right].
-$$
+
+```
+
 
 **Step 3 — Back substitution:**  
 From row 3: $-7z = -21 \Rightarrow z = 3$.  
@@ -182,20 +221,27 @@ Row 1: $x + y + z = 6 \Rightarrow x + 2 + 3 = 6 \Rightarrow x = 1$.
 
 Solve $A\mathbf{x}=\mathbf{b}$ with
 
-$$
+
+```math
 A = \begin{bmatrix} 3 & 1 \\ 2 & 1 \end{bmatrix}, \quad
 \mathbf{b} = \begin{bmatrix} 5 \\ 4 \end{bmatrix}.
-$$
+
+```
+
 
 $\det A = 3\cdot 1 - 1\cdot 2 = 1$. So
 
-$$
+
+```math
 A^{-1} = \frac{1}{1}\begin{bmatrix} 1 & -1 \\ -2 & 3 \end{bmatrix}
 =
 \begin{bmatrix} 1 & -1 \\ -2 & 3 \end{bmatrix}.
-$$
 
-$$
+```
+
+
+
+```math
 \mathbf{x} = A^{-1}\mathbf{b}
 =
 \begin{bmatrix} 1 & -1 \\ -2 & 3 \end{bmatrix}
@@ -204,7 +250,9 @@ $$
 \begin{bmatrix} 5-4 \\ -10+12 \end{bmatrix}
 =
 \begin{bmatrix} 1 \\ 2 \end{bmatrix}.
-$$
+
+```
+
 
 So $x_1=1$, $x_2=2$. **Check:** $3(1)+1(2)=5$, $2(1)+1(2)=4$.
 
@@ -212,12 +260,15 @@ So $x_1=1$, $x_2=2$. **Check:** $3(1)+1(2)=5$, $2(1)+1(2)=4$.
 
 ### Example C — No solution ($2 \times 2$)
 
-$$
+
+```math
 \begin{cases}
 x + y = 1, \\
 x + y = 2.
 \end{cases}
-$$
+
+```
+
 
 Subtract: $0 = 1$. **Inconsistent** — no solution. In augmented form, elimination produces a row $[0\ 0\ |\ c]$ with $c \neq 0$.
 

@@ -39,15 +39,21 @@ From these, you can prove useful facts (e.g. $|\|\mathbf{x}\| - \|\mathbf{y}\|| 
 
 For $p \ge 1$, the **$L_p$ norm** is
 
-$$
+
+```math
 \|\mathbf{x}\|_p = \left( \sum_{i=1}^{n} |x_i|^p \right)^{1/p}.
-$$
+
+```
+
 
 **Limit $p \to \infty$** gives the **max norm**:
 
-$$
+
+```math
 \|\mathbf{x}\|_\infty = \max_{1 \le i \le n} |x_i|.
-$$
+
+```
+
 
 ---
 
@@ -63,11 +69,14 @@ Fix $\mathbf{x} = (3,-4)^\top$.
 
 **Another vector** $\mathbf{x} = (1,2,-2)^\top$:
 
-$$
+
+```math
 \|\mathbf{x}\|_1 = 1+2+2 = 5, \quad
 \|\mathbf{x}\|_2 = \sqrt{1+4+4} = 3, \quad
 \|\mathbf{x}\|_\infty = 2.
-$$
+
+```
+
 
 ---
 
@@ -83,9 +92,12 @@ $$
 
 The **Euclidean** norm satisfies
 
-$$
+
+```math
 \|\mathbf{x}\|_2^2 = \mathbf{x}^\top \mathbf{x} = \langle \mathbf{x}, \mathbf{x} \rangle
-$$
+
+```
+
 
 for the standard dot product (note **10**). Not every norm comes from an inner product, but $L_2$ does.
 
@@ -115,10 +127,13 @@ Let $\mathbf{v} = (1,1)^\top$. Then $\|\mathbf{v}\|_1 = 2$, $\|\mathbf{v}\|_2 = 
 
 $\mathbf{x} = (1,0)^\top$, $\mathbf{y} = (0,1)^\top$ in $\mathbb{R}^2$ with $\|\cdot\|_1$:
 
-$$
+
+```math
 \|\mathbf{x}+\mathbf{y}\|_1 = \|(1,1)^\top\|_1 = 2, \quad
 \|\mathbf{x}\|_1 + \|\mathbf{y}\|_1 = 1 + 1 = 2.
-$$
+
+```
+
 
 Equality in the **triangle inequality** for $\|\cdot\|_1$ holds here because $\mathbf{x}$ and $\mathbf{y}$ are **supported on different coordinates** ($(1,0)$ vs $(0,1)$), so $|\cdot|$ adds with **no cancellation**: $|1|+|1|=|1+1|$.
 
@@ -128,9 +143,12 @@ Equality in the **triangle inequality** for $\|\cdot\|_1$ holds here because $\m
 
 If $\mathbf{x} = (3,4)^\top$, then $\|\mathbf{x}\|_2 = 5$. The **unit-norm** vector in the same direction is
 
-$$
+
+```math
 \hat{\mathbf{x}} = \frac{\mathbf{x}}{\|\mathbf{x}\|_2} = \left(\frac{3}{5},\, \frac{4}{5}\right)^\top,
-$$
+
+```
+
 
 used when you want **length-normalized** features before cosine similarity.
 

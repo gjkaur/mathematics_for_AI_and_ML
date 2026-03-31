@@ -21,9 +21,12 @@ Observed signals are almost always **noisy**. **Smoothing** reduces high-frequen
 
 **Noise** means random or unmodeled variation superimposed on a **signal** $f(\mathbf{x})$:
 
-$$
+
+```math
 y_i = f(\mathbf{x}_i) + \varepsilon_i.
-$$
+
+```
+
 
 **Smoothing** reduces high-frequency or spurious fluctuation while preserving **trend** or **structure**. Methods range from **moving averages** to **model-based** denoising (regression, PCA).
 
@@ -43,15 +46,21 @@ Given a sequence $y_1,\ldots,y_T$, a **simple moving average** replaces each val
 
 **Example sequence:**
 
-$$
+
+```math
 y = (5.1,\, 4.9,\, 5.2,\, 10.0,\, 5.0).
-$$
+
+```
+
 
 The spike $10.0$ may be noise. A **3-point** average around index $3$ (using indices $2,3,4$) gives
 
-$$
+
+```math
 \tilde{y}_3 = \frac{1}{3}(y_2 + y_3 + y_4) = \frac{1}{3}(4.9 + 5.2 + 10.0) \approx 6.7,
-$$
+
+```
+
 
 which is **smoother** than the raw $10.0$ (pulled toward neighbors).
 

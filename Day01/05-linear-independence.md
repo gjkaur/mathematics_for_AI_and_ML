@@ -27,9 +27,12 @@
 
 Vectors $\mathbf{v}_1,\ldots,\mathbf{v}_k \in \mathbb{R}^n$ are **linearly independent** if the **only** solution to
 
-$$
+
+```math
 \alpha_1 \mathbf{v}_1 + \alpha_2 \mathbf{v}_2 + \cdots + \alpha_k \mathbf{v}_k = \mathbf{0}
-$$
+
+```
+
 
 is $\alpha_1 = \alpha_2 = \cdots = \alpha_k = 0$.
 
@@ -43,9 +46,12 @@ If there exists a solution with **not all** $\alpha_i$ equal to zero, the vector
 
 Let $\mathbf{v}_1 = (1,0)^\top$ and $\mathbf{v}_2 = (0,1)^\top$. Suppose
 
-$$
+
+```math
 \alpha_1 \mathbf{v}_1 + \alpha_2 \mathbf{v}_2 = \mathbf{0}.
-$$
+
+```
+
 
 Then $(\alpha_1, \alpha_2)^\top = (0,0)^\top$, so $\alpha_1 = \alpha_2 = 0$. Hence $\{\mathbf{v}_1,\mathbf{v}_2\}$ is **linearly independent**.
 
@@ -55,9 +61,12 @@ Then $(\alpha_1, \alpha_2)^\top = (0,0)^\top$, so $\alpha_1 = \alpha_2 = 0$. Hen
 
 Let $\mathbf{v}_1 = (1,2)^\top$ and $\mathbf{v}_2 = (2,4)^\top$. Observe $\mathbf{v}_2 = 2\mathbf{v}_1$. Therefore
 
-$$
+
+```math
 2\mathbf{v}_1 - \mathbf{v}_2 = \mathbf{0},
-$$
+
+```
+
 
 with coefficients $(2,-1) \neq (0,0)$. The set is **linearly dependent**.
 
@@ -67,10 +76,13 @@ with coefficients $(2,-1) \neq (0,0)$. The set is **linearly dependent**.
 
 Place $\mathbf{v}_1,\ldots,\mathbf{v}_k$ as **columns** of a matrix $A \in \mathbb{R}^{n \times k}$. Then
 
-$$
+
+```math
 \alpha_1 \mathbf{v}_1 + \cdots + \alpha_k \mathbf{v}_k = A \boldsymbol{\alpha},
 \quad \boldsymbol{\alpha} = (\alpha_1,\ldots,\alpha_k)^\top.
-$$
+
+```
+
 
 The vectors are **independent** if and only if $A\boldsymbol{\alpha} = \mathbf{0}$ implies $\boldsymbol{\alpha} = \mathbf{0}$.
 
@@ -78,9 +90,12 @@ For **square** $n \times n$ matrix $A$, columns are independent **if and only if
 
 **Example:**
 
-$$
+
+```math
 A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}, \quad \det A = 1\cdot 4 - 2\cdot 3 = -2 \neq 0.
-$$
+
+```
+
 
 So the columns are **linearly independent**.
 
@@ -108,9 +123,12 @@ Any set of **more than $n$** vectors in $\mathbb{R}^n$ is necessarily **linearly
 
 Let $\mathbf{v}_1 = (1,0,0)^\top$, $\mathbf{v}_2 = (0,1,0)^\top$, $\mathbf{v}_3 = (1,1,0)^\top$. Note $\mathbf{v}_3 = \mathbf{v}_1 + \mathbf{v}_2$, so
 
-$$
+
+```math
 \mathbf{v}_1 + \mathbf{v}_2 - \mathbf{v}_3 = \mathbf{0}
-$$
+
+```
+
 
 with coefficients $(1,1,-1) \neq \mathbf{0}$. The set is **linearly dependent**.
 
@@ -120,9 +138,12 @@ with coefficients $(1,1,-1) \neq \mathbf{0}$. The set is **linearly dependent**.
 
 $A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$. Solve $A\boldsymbol{\alpha}=\mathbf{0}$:
 
-$$
+
+```math
 \alpha_1 + 2\alpha_2 = 0,\quad 3\alpha_1 + 4\alpha_2 = 0.
-$$
+
+```
+
 
 From the first, $\alpha_1 = -2\alpha_2$. Substitute: $3(-2\alpha_2)+4\alpha_2 = -2\alpha_2 = 0 \Rightarrow \alpha_2=0$, hence $\alpha_1=0$. **Only trivial solution** → columns are **independent**.
 
@@ -132,9 +153,12 @@ From the first, $\alpha_1 = -2\alpha_2$. Substitute: $3(-2\alpha_2)+4\alpha_2 = 
 
 Take $\mathbf{u}_1=(1,0)^\top$, $\mathbf{u}_2=(0,1)^\top$, $\mathbf{u}_3=(1,1)^\top$. We know $\mathbf{u}_3 = \mathbf{u}_1+\mathbf{u}_2$, so
 
-$$
+
+```math
 \mathbf{u}_1 + \mathbf{u}_2 - \mathbf{u}_3 = \mathbf{0}.
-$$
+
+```
+
 
 This illustrates: **more than $n$** vectors in $\mathbb{R}^n$ cannot be independent.
 

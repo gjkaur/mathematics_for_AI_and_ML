@@ -35,9 +35,12 @@ Then **every** $\mathbf{u} \in U$ has **unique** coefficients $(c_1,\ldots,c_d)$
 
 **Standard basis of $\mathbb{R}^n$:**
 
-$$
+
+```math
 \mathbf{e}_1 = (1,0,\ldots,0)^\top,\ \ldots,\ \mathbf{e}_n = (0,\ldots,0,1)^\top.
-$$
+
+```
+
 
 ---
 
@@ -47,9 +50,12 @@ The **dimension** $\dim(U)$ is the number of vectors in **any** basis of $U$ (th
 
 **Example in $\mathbb{R}^3$:** The three vectors
 
-$$
+
+```math
 (1,0,0)^\top,\quad (1,1,0)^\top,\quad (1,1,1)^\top
-$$
+
+```
+
 
 form a basis of $\mathbb{R}^3$ (you can verify independence and spanning by solving $c_1\mathbf{v}_1+c_2\mathbf{v}_2+c_3\mathbf{v}_3=\mathbf{b}$ for arbitrary $\mathbf{b}$).
 
@@ -66,15 +72,21 @@ For $A \in \mathbb{R}^{m \times n}$:
 
 **Numerical example:**
 
-$$
+
+```math
 A = \begin{bmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \end{bmatrix}.
-$$
+
+```
+
 
 Column 2 is $2\times$ column 1; column 3 is $3\times$ column 1. Only **one** column is independent, so
 
-$$
+
+```math
 \operatorname{rank}(A) = 1.
-$$
+
+```
+
 
 ---
 
@@ -101,9 +113,12 @@ $\operatorname{rank}(A)=n$ $\Leftrightarrow$ columns form a basis of $\mathbb{R}
 
 ### Example A — Rank of a $2 \times 2$ matrix
 
-$$
+
+```math
 B = \begin{bmatrix} 2 & 0 \\ 1 & 0 \end{bmatrix}.
-$$
+
+```
+
 
 Column 2 is $0$; column 1 is nonzero. So $\operatorname{rank}(B) = 1$. **Null space:** $B\mathbf{x}=\mathbf{0}$ gives $2x_1=0$ and $x_1=0$, so $\mathbf{x}=(0,t)^\top$ with $t$ free — nullity $1$, and $1+1=2$ (rank–nullity).
 
@@ -115,7 +130,8 @@ Given $\mathbf{u}_1 = (1,1,0)^\top$ and $\mathbf{u}_2 = (1,0,1)^\top$ (independe
 
 Try $\mathbf{u}_3 = (1,0,0)^\top$. Solve $c_1\mathbf{u}_1+c_2\mathbf{u}_2+c_3\mathbf{u}_3=\mathbf{0}$ **by components**:
 
-$$
+
+```math
 c_1\begin{bmatrix}1\\1\\0\end{bmatrix}
 +c_2\begin{bmatrix}1\\0\\1\end{bmatrix}
 +c_3\begin{bmatrix}1\\0\\0\end{bmatrix}
@@ -128,7 +144,9 @@ c_2 = 0 & \text{(3rd)}
 \end{cases}
 \Rightarrow
 c_1=c_2=c_3=0.
-$$
+
+```
+
 
 So $\{\mathbf{u}_1,\mathbf{u}_2,\mathbf{u}_3\}$ is **linearly independent** (a basis of $\mathbb{R}^3$). **Any** vector not in $\operatorname{span}\{\mathbf{u}_1,\mathbf{u}_2\}$ could be chosen instead; $(1,0,0)^\top$ is one valid choice.
 
@@ -138,12 +156,15 @@ So $\{\mathbf{u}_1,\mathbf{u}_2,\mathbf{u}_3\}$ is **linearly independent** (a b
 
 If $\mathbf{u} \in \mathbb{R}^m$, $\mathbf{v} \in \mathbb{R}^n$, the **outer product** $A = \mathbf{u}\mathbf{v}^\top$ is $m \times n$ with **rank 1** (every column is a multiple of $\mathbf{u}$). Example: $\mathbf{u}=(1,2)^\top$, $\mathbf{v}=(1,-1)^\top$.
 
-$$
+
+```math
 A = \begin{bmatrix} 1 \\ 2 \end{bmatrix}
 \begin{bmatrix} 1 & -1 \end{bmatrix}
 =
 \begin{bmatrix} 1 & -1 \\ 2 & -2 \end{bmatrix}.
-$$
+
+```
+
 
 Second column is $-1$ times the first → $\operatorname{rank}(A)=1$. This is the **low-rank** structure behind many ML models.
 

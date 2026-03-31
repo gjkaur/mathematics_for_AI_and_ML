@@ -27,9 +27,12 @@ A **system of linear equations** is the problem of finding numbers $x_1, x_2, \l
 
 A single **linear equation** in $n$ unknowns has the form
 
-$$
+
+```math
 a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b,
-$$
+
+```
+
 
 where $a_1,\ldots,a_n$ and $b$ are given real numbers.
 
@@ -46,14 +49,17 @@ where $a_1,\ldots,a_n$ and $b$ are given real numbers.
 
 A **system** collects several such equations that must **all** hold:
 
-$$
+
+```math
 \begin{aligned}
 a_{11}x_1 + \cdots + a_{1n}x_n &= b_1, \\
 a_{21}x_1 + \cdots + a_{2n}x_n &= b_2, \\
 &\vdots \\
 a_{m1}x_1 + \cdots + a_{mn}x_n &= b_m.
 \end{aligned}
-$$
+
+```
+
 
 You seek one vector $\mathbf{x} = (x_1,\ldots,x_n)^\top$ that satisfies **every** row.
 
@@ -63,36 +69,48 @@ You seek one vector $\mathbf{x} = (x_1,\ldots,x_n)^\top$ that satisfies **every*
 
 Find $x, y \in \mathbb{R}$ such that
 
-$$
+
+```math
 \begin{cases}
 2x + y = 5, \\
 x - y = 1.
 \end{cases}
-$$
+
+```
+
 
 **Step 1 — Eliminate $y$ by adding the two equations:**
 
-$$
+
+```math
 (2x + y) + (x - y) = 5 + 1
 \quad\Rightarrow\quad
 3x = 6
 \quad\Rightarrow\quad
 x = 2.
-$$
+
+```
+
 
 **Step 2 — Substitute $x = 2$ into $x - y = 1$:**
 
-$$
+
+```math
 2 - y = 1
 \quad\Rightarrow\quad
 y = 1.
-$$
+
+```
+
 
 **Verification:**
 
-$$
+
+```math
 2(2) + 1 = 5, \qquad 2 - 1 = 1.
-$$
+
+```
+
 
 So the **unique solution** is $(x,y) = (2,1)$.
 
@@ -104,12 +122,15 @@ So the **unique solution** is $(x,y) = (2,1)$.
 
 The same system can be written compactly as
 
-$$
+
+```math
 \underbrace{\begin{bmatrix} 2 & 1 \\ 1 & -1 \end{bmatrix}}_{A}
 \underbrace{\begin{bmatrix} x \\ y \end{bmatrix}}_{\mathbf{x}}
 =
 \underbrace{\begin{bmatrix} 5 \\ 1 \end{bmatrix}}_{\mathbf{b}}.
-$$
+
+```
+
 
 - **Rows of $A$** correspond to **equations**.
 - **Columns of $A$** show how each **unknown** contributes to each equation.
@@ -137,12 +158,15 @@ Later notes (**03**, **06**) connect this to **elimination**, **rank**, and **in
 
 Consider
 
-$$
+
+```math
 \begin{cases}
 x + y = 2, \\
 x + y = 3.
 \end{cases}
-$$
+
+```
+
 
 Subtracting gives $0 = 1$, which is **impossible**. There is **no** $(x,y)$ satisfying both equations.
 
@@ -158,18 +182,22 @@ In applications, inconsistency often means your **constraints** or **measurement
 
 Solve
 
-$$
+
+```math
 \begin{cases}
 3x + 2y = 8, \\
 x - y = 1.
 \end{cases}
-$$
+
+```
+
 
 **Step 1.** From the second equation, $x = y + 1$.
 
 **Step 2.** Substitute into the first:
 
-$$
+
+```math
 3(y+1) + 2y = 8
 \;\Rightarrow\;
 3y + 3 + 2y = 8
@@ -177,7 +205,9 @@ $$
 5y = 5
 \;\Rightarrow\;
 y = 1.
-$$
+
+```
+
 
 **Step 3.** Then $x = y + 1 = 2$.
 
@@ -187,18 +217,24 @@ $$
 
 ### Example B — Infinitely many solutions
 
-$$
+
+```math
 \begin{cases}
 x + 2y = 4, \\
 2x + 4y = 8.
 \end{cases}
-$$
+
+```
+
 
 The second equation is **twice** the first, so there is only **one** independent equation. From $x + 2y = 4$, write $x = 4 - 2y$ with $y \in \mathbb{R}$ free. **Solution set:**
 
-$$
+
+```math
 (x,y) = (4 - 2t,\, t), \quad t \in \mathbb{R}.
-$$
+
+```
+
 
 In matrix form $A\mathbf{x}=\mathbf{b}$ with $A=\begin{bmatrix}1&2\\2&4\end{bmatrix}$, $\mathbf{b}=\begin{bmatrix}4\\8\end{bmatrix}$, the two rows are dependent, so **rank** $< 2$ and there are infinitely many solutions.
 
@@ -208,31 +244,40 @@ In matrix form $A\mathbf{x}=\mathbf{b}$ with $A=\begin{bmatrix}1&2\\2&4\end{bmat
 
 The system
 
-$$
+
+```math
 \begin{cases}
 x + y = 3, \\
 2x - y = 0
 \end{cases}
-$$
+
+```
+
 
 is $A\mathbf{x}=\mathbf{b}$ with
 
-$$
+
+```math
 A = \begin{bmatrix} 1 & 1 \\ 2 & -1 \end{bmatrix},\quad
 \mathbf{x} = \begin{bmatrix} x \\ y \end{bmatrix},\quad
 \mathbf{b} = \begin{bmatrix} 3 \\ 0 \end{bmatrix}.
-$$
+
+```
+
 
 Solving: from the second equation $y = 2x$, plug into the first: $x + 2x = 3 \Rightarrow x = 1$, $y = 2$. Verify:
 
-$$
+
+```math
 \begin{bmatrix} 1 & 1 \\ 2 & -1 \end{bmatrix}
 \begin{bmatrix} 1 \\ 2 \end{bmatrix}
 =
 \begin{bmatrix} 1+2 \\ 2-2 \end{bmatrix}
 =
 \begin{bmatrix} 3 \\ 0 \end{bmatrix}.
-$$
+
+```
+
 
 ---
 

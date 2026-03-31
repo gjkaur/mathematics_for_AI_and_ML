@@ -27,9 +27,12 @@
 
 Assume
 
-$$
+
+```math
 y_i = w_0 + w_1 x_i + \varepsilon_i, \qquad \varepsilon_i \sim \mathcal{N}(0, \sigma^2) \text{ i.i.d.}
-$$
+
+```
+
 
 **Simulation procedure:**
 
@@ -46,9 +49,12 @@ You obtain pairs $(x_i,y_i)$ that follow the **probabilistic model** used in Cha
 
 Let $w_0 = 1$, $w_1 = 2$, $\sigma = 0.1$. Take $x_1 = 0.5$ and draw (for example) $\varepsilon_1 = -0.03$. Then
 
-$$
+
+```math
 y_1 = 1 + 2(0.5) + (-0.03) = 1 + 1 - 0.03 = 1.97.
-$$
+
+```
+
 
 Repeat for $n \gg 1$ to get a **dataset**; fit $(\hat{w}_0,\hat{w}_1)$ by least squares and compare to $(1,2)$.
 
@@ -58,9 +64,12 @@ Repeat for $n \gg 1$ to get a **dataset**; fit $(\hat{w}_0,\hat{w}_1)$ by least 
 
 For $\mathbf{x} \in \mathbb{R}^d$, a common choice is
 
-$$
+
+```math
 \mathbf{x} \sim \mathcal{N}(\boldsymbol{\mu}, \Sigma),
-$$
+
+```
+
 
 a **multivariate Gaussian** (Chapter 6). The **mean** $\boldsymbol{\mu}$ shifts the cloud; **covariance** $\Sigma$ controls shape and **correlations** between features.
 

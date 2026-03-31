@@ -27,9 +27,12 @@ A **linear mapping** (linear transformation) between vector spaces **preserves**
 
 Let $V$ and $W$ be vector spaces over $\mathbb{R}$. A map $\Phi: V \to W$ is **linear** if for all $\mathbf{u},\mathbf{v} \in V$ and $\alpha,\beta \in \mathbb{R}$:
 
-$$
+
+```math
 \Phi(\alpha \mathbf{u} + \beta \mathbf{v}) = \alpha \Phi(\mathbf{u}) + \beta \Phi(\mathbf{v}).
-$$
+
+```
+
 
 Equivalently: $\Phi(\mathbf{u}+\mathbf{v}) = \Phi(\mathbf{u})+\Phi(\mathbf{v})$ and $\Phi(\alpha \mathbf{u}) = \alpha \Phi(\mathbf{u})$.
 
@@ -41,9 +44,12 @@ Equivalently: $\Phi(\mathbf{u}+\mathbf{v}) = \Phi(\mathbf{u})+\Phi(\mathbf{v})$ 
 
 If $V = \mathbb{R}^n$ and $W = \mathbb{R}^m$ with the **standard bases**, every linear $\Phi$ can be written
 
-$$
+
+```math
 \Phi(\mathbf{x}) = A \mathbf{x}
-$$
+
+```
+
 
 for a unique $A \in \mathbb{R}^{m \times n}$. Column $j$ of $A$ equals $\Phi(\mathbf{e}_j)$.
 
@@ -53,12 +59,15 @@ for a unique $A \in \mathbb{R}^{m \times n}$. Column $j$ of $A$ equals $\Phi(\ma
 
 Rotation by $90^\circ$ counterclockwise sends $(x_1,x_2)^\top \mapsto (-x_2, x_1)^\top$. Thus
 
-$$
+
+```math
 \Phi\begin{bmatrix} x_1 \\ x_2 \end{bmatrix}
 =
 \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}
 \begin{bmatrix} x_1 \\ x_2 \end{bmatrix}.
-$$
+
+```
+
 
 Check on $\mathbf{e}_1 = (1,0)^\top$: $\Phi(\mathbf{e}_1) = (0,1)^\top$, which is the first column of $A$.
 
@@ -76,15 +85,21 @@ Check on $\mathbf{e}_1 = (1,0)^\top$: $\Phi(\mathbf{e}_1) = (0,1)^\top$, which i
 
 **Rank–nullity (finite-dimensional $V$):**
 
-$$
+
+```math
 \dim \ker(\Phi) + \dim \operatorname{Im}(\Phi) = \dim(V).
-$$
+
+```
+
 
 **Worked example:**
 
-$$
+
+```math
 A = \begin{bmatrix} 1 & 1 \\ 2 & 2 \end{bmatrix}.
-$$
+
+```
+
 
 $A\mathbf{x}=\mathbf{0}$ gives $x_1+x_2=0$, so $\ker(A) = \operatorname{span}\{(1,-1)^\top\}$, dimension $1$.  
 $\operatorname{rank}(A)=1$, so $\dim\operatorname{Im}(A)=1$, and $2 = 1 + 1$ ✓.
@@ -95,9 +110,12 @@ $\operatorname{rank}(A)=1$, so $\dim\operatorname{Im}(A)=1$, and $2 = 1 + 1$ ✓
 
 If $\Phi(\mathbf{x}) = A\mathbf{x}$ and $\Psi(\mathbf{y}) = B\mathbf{y}$, then
 
-$$
+
+```math
 (\Psi \circ \Phi)(\mathbf{x}) = \Psi(A\mathbf{x}) = B(A\mathbf{x}) = (BA)\mathbf{x}.
-$$
+
+```
+
 
 So **composition** of linear maps corresponds to **matrix multiplication** (order: apply $\Phi$ first, then $\Psi$ → matrix $BA$).
 
@@ -111,9 +129,10 @@ So **composition** of linear maps corresponds to **matrix multiplication** (orde
 
 Let $A = \begin{bmatrix} 1 & 2 \\ 2 & 4 \end{bmatrix}$. Column 2 $= 2\times$ column 1, so
 
-$$
+
+```math
 \operatorname{Im}(A) = \operatorname{span}\left\{ \begin{bmatrix}1\\2\end{bmatrix} \right\}
-\]
+```
 
 (all multiples of $(1,2)^\top$). **Kernel:** $x_1+2x_2=0$ ⇒ $\mathbf{x}=t(-2,1)^\top$.
 
@@ -123,14 +142,15 @@ $$
 
 Let $R_{90} = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ (rotate $90^\circ$ counterclockwise). Then $R_{90}^2 = R_{180}$:
 
-$$
+
+```math
 R_{90}^2 =
 \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}
 \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}
 =
 \begin{bmatrix} -1 & 0 \\ 0 & -1 \end{bmatrix}
 = -I_2.
-$$
+```
 
 So applying the rotation **twice** sends each vector to its **negative** (half-turn).
 

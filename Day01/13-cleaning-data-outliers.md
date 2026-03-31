@@ -37,9 +37,12 @@ There is **no universal definition**. Common approaches:
 
 Fit $\hat{y}_i = w x_i + b$. The **residual** is
 
-$$
+
+```math
 r_i = y_i - \hat{y}_i.
-$$
+
+```
+
 
 **Toy dataset:**
 
@@ -60,15 +63,21 @@ The first three points are roughly consistent with a line through the origin wit
 
 Let feature vectors be $\mathbf{x}_i \in \mathbb{R}^d$. With sample mean
 
-$$
+
+```math
 \bar{\mathbf{x}} = \frac{1}{N}\sum_{i=1}^N \mathbf{x}_i,
-$$
+
+```
+
 
 large values of
 
-$$
+
+```math
 \|\mathbf{x}_i - \bar{\mathbf{x}}\|_2
-$$
+
+```
+
 
 flag points **far from the center** (candidate outliers in **unsupervised** screening).
 
@@ -80,9 +89,12 @@ flag points **far from the center** (candidate outliers in **unsupervised** scre
 
 If you model $y_i = \mathbf{w}^\top \mathbf{x}_i + \varepsilon_i$ with $\varepsilon_i \sim \mathcal{N}(0,\sigma^2)$, then **large** $|r_i|$ are **unlikely** under the model. A common rule of thumb is to **inspect** points with
 
-$$
+
+```math
 |r_i| > 3\sigma
-$$
+
+```
+
 
 (**three-sigma rule**), remembering that Gaussian tails are **thin**—real data often have **heavier tails** (Chapter 6 motivates choosing distributions that match data).
 
@@ -131,15 +143,21 @@ Sample values $1,2,3,4,100$ ($n=5$). **Sample mean** $\bar{x} = (1+2+3+4+100)/5 
 
 **Sum of squared deviations** (from $\bar{x}$):
 
-$$
+
+```math
 (1-22)^2+(2-22)^2+(3-22)^2+(4-22)^2+(100-22)^2 = 441+400+361+324+6084 = 7610.
-$$
+
+```
+
 
 **Sample standard deviation** (divide by $n-1=4$):
 
-$$
+
+```math
 s = \sqrt{7610/4} = \sqrt{1902.5} \approx 43.62.
-$$
+
+```
+
 
 The value $100$ has **$z$-score** $(100-22)/s \approx 78/43.62 \approx 1.79$. It is **far** from the bulk in raw terms, yet **below** a common $|z|>3$ rule—illustrating that **blind** $3\sigma$ rules miss context (heavy tails, small $n$, or legitimate extremes). Use $z$-scores with care and with your **model** for noise.
 
