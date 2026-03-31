@@ -1,5 +1,7 @@
 # Day 1 — YouTube resources (by topic)
 
+> **GitHub display:** github.com does **not** render LaTeX math (`$...$`) in Markdown files. These companion pages use **plain text and Unicode** (for example `` `Ax = b` ``, ℝⁿ, ‖**x**‖) so formulas look correct in the browser.
+
 Each topic file lists **individual videos** with the **exact title shown on YouTube** (not just a channel name) and a short line mapping that video to the matching **MML section**. Use these **alongside** the textbook (*Mathematics for Machine Learning*) and the notes in [`Day01/`](../).
 
 | # | Topic | Videos file |
