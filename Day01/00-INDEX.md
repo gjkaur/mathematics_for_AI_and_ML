@@ -45,6 +45,8 @@ $$
 
 **Syllabus mapping:** [Day01.md](Day01.md) lists chapter/section references and suggested reading order.
 
+**YouTube (per topic):** [youtube/README.md](youtube/README.md) — curated links for each Day 1 topic.
+
 Each topic file includes an **Additional solved examples** section: extra problems in the **style of MML** chapter exercises, with **step-by-step** solutions (book-style where standard; original problems where the topic is applied, e.g. outliers / synthetic data).
 
 ---
