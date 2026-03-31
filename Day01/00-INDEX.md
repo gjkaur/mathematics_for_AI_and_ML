@@ -11,7 +11,7 @@ Every topic note begins with **Why learn this?** — motivation, **where the ide
 Math is written in **LaTeX** using:
 
 - **Inline:** `$ ... $` (e.g. `$A\mathbf{x}=\mathbf{b}$`)
-- **Display:** `$$ ... $$` on their own lines
+- **Display:** `$$ ... $$` on their own lines, with a **blank line before and after** each display block (helps parsers, including GitHub’s)
 
 for formulas such as:
 
@@ -19,7 +19,11 @@ $$
 \mathbf{y} = A\mathbf{x}\,, \quad \|\mathbf{x}\|_2 = \sqrt{\mathbf{x}^\top\mathbf{x}}\,.
 $$
 
-**Viewing:** Use a Markdown preview that supports math (e.g. **VS Code** with a Markdown+Math extension, **Obsidian**, **Typora**, **Jupyter**, or **GitHub** rendering of `README.md`-style files).
+**On GitHub:** Open any topic `.md` file in the **normal file view** on [github.com](https://github.com) (not **Raw**). GitHub renders `$...$` and `$$...$$` using **MathJax**—see the official guide: [Writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
+
+**Locally:** **VS Code** with a Markdown+Math extension, **Obsidian**, **Typora**, **Jupyter**, or any preview that supports LaTeX-style math.
+
+The short **YouTube companion** pages under [`youtube/`](youtube/README.md) use plain Unicode for one-line snippets so those lists stay compact; the **topic notes** in this folder keep full LaTeX.
 
 ---
 

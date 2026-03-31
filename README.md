@@ -23,7 +23,7 @@ Each `DayNN/DayNN.md` file maps that day’s topics to **book chapters and secti
 2. Read `DayNN.md` for the **reading order** and **MML references**.
 3. Use `00-INDEX.md` (Day 1) or the numbered topic files for **notes and solved examples**.
 
-Math in the notes uses **LaTeX** (`$...$`, `$$...$$`). Use a Markdown viewer with math support (VS Code, GitHub, Obsidian, etc.).
+Math in the notes uses **LaTeX** (`$...$`, `$$...$$`). On **GitHub**, open the `.md` file in the repository browser (not Raw)—GitHub renders math with MathJax ([docs](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)). Locally, use VS Code with a math-capable Markdown preview, Obsidian, Typora, etc.
 
 ---
 

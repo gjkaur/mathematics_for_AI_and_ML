@@ -6,7 +6,7 @@ Use the book as the primary reference for definitions, examples, and exercises. 
 
 ### Topic notes (numbered files in this folder)
 
-Detailed step-by-step notes with **LaTeX math** (`$...$`, `$$...$$`): start at **[00-INDEX.md](00-INDEX.md)** for the full list and viewing tips (how to preview Markdown math). Files are named `01-…` through `15-…`. Optional **YouTube companions** (one small readme per topic): **[youtube/README.md](youtube/README.md)**.
+Detailed step-by-step notes with **LaTeX math** (`$...$`, `$$...$$`): start at **[00-INDEX.md](00-INDEX.md)** for the full list and **how to view math on GitHub** (MathJax) or in your editor. Files are named `01-…` through `15-…`. Optional **YouTube companions** (one small readme per topic): **[youtube/README.md](youtube/README.md)**.
 
 ---
 
