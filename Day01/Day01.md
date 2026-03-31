@@ -1,0 +1,80 @@
+# Day 1 — Study guide (MML textbook mapping)
+
+**Textbook:** *Mathematics for Machine Learning* — Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong (Cambridge University Press; PDF editions often dated 2020–2021).
+
+Use the book as the primary reference for definitions, examples, and exercises. Section numbers below follow the standard structure of the book (see also [mml-book.com](https://mml-book.com/) for the official table of contents).
+
+### Topic notes (numbered files in this folder)
+
+Detailed step-by-step notes with **LaTeX math** (`$...$`, `$$...$$`): start at **[00-INDEX.md](00-INDEX.md)** for the full list and viewing tips (how to preview Markdown math). Files are named `01-…` through `15-…`.
+
+---
+
+## 1. Linear algebra — foundations
+
+| Topic | Primary chapter / sections |
+| --- | --- |
+| Systems of linear equations | **Chapter 2 — Linear Algebra**, §2.1 *Systems of Linear Equations* |
+| Matrices | **Chapter 2**, §2.2 *Matrices* |
+| Solving systems of linear equations | **Chapter 2**, §2.3 *Solving Systems of Linear Equations* |
+| Vector spaces | **Chapter 2**, §2.4 *Vector Spaces* |
+
+---
+
+## 2. Linear independence and related structure
+
+| Topic | Primary chapter / sections |
+| --- | --- |
+| Linear independence | **Chapter 2**, §2.5 *Linear Independence* |
+| Basis and rank | **Chapter 2**, §2.6 *Basis and Rank* |
+| Linear mappings | **Chapter 2**, §2.7 *Linear Mappings* |
+| Affine spaces | **Chapter 2**, §2.8 *Affine Spaces* |
+
+---
+
+## 3. Analytic geometry
+
+| Topic | Primary chapter / sections |
+| --- | --- |
+| Norms | **Chapter 3 — Analytic Geometry**, §3.1 *Norms* |
+| Inner products | **Chapter 3**, §3.2 *Inner Products* |
+| Lengths and distances | **Chapter 3**, §3.3 *Lengths and Distances* |
+| Angles and orthogonality | **Chapter 3**, §3.4 *Angles and Orthogonality* |
+
+*Follow-on sections in Chapter 3* (orthonormal bases, orthogonal complements, inner products of functions, etc.) reinforce the same ideas; read them if your course extends geometry further.
+
+---
+
+## 4. Cleaning and generating data (synergy with the textbook)
+
+The book does **not** use one chapter titled “data cleaning.” Treat the following as **where the mathematics for those ideas lives** in *Mathematics for Machine Learning*:
+
+| Topic | Where to read |
+| --- | --- |
+| Cleaning data from outliers | **Chapter 8 — When Models Meet Data** (data, models, learning; empirical risk and assumptions about data). **Chapter 9 — Linear Regression** (noise in the observation model; residuals and what “extreme” points do to fits). **Chapter 6 — Probability and Distribution** (heavy-tailed vs Gaussian noise as a modeling choice). |
+| Generating controlled random datasets | **Chapter 6 — Probability and Distribution** (random variables, sampling, common distributions including multivariate Gaussians). **Chapter 8 — When Models Meet Data** (linking data to learning problems). **Chapter 9 — Linear Regression** (synthetic regression setups consistent with the book’s generative story). |
+| Smoothing the noise in real-world data | **Chapter 6** (noise as randomness; distributions). **Chapter 9** (Gaussian noise ↔ least squares / maximum likelihood). **Chapter 10 — Dimensionality Reduction with PCA** (variance, signal vs noise in low-dimensional summaries) if your instructor ties “smoothing” to variance-based views. |
+
+---
+
+## Suggested reading order for Day 1
+
+1. **Chapter 2** (full chapter, in order §2.1–§2.8).  
+2. **Chapter 3** (at least §3.1–§3.4; continue through the rest of the chapter as assigned).  
+3. **Chapters 6, 8, and 9** — selected for the data-oriented bullets above, in that order if you are new to probability in the book.
+
+---
+
+## Quick reference — book chapters touched on Day 1
+
+| Book chapter | Title |
+| --- | --- |
+| 2 | Linear Algebra |
+| 3 | Analytic Geometry |
+| 6 | Probability and Distribution |
+| 8 | When Models Meet Data |
+| 9 | Linear Regression |
+
+---
+
+*This file maps lecture topics to the textbook only; it does not replace solving exercises from the book.*
