@@ -1,0 +1,8 @@
+{
+  "markdown.preview.fontSize": 18,
+  "markdown.styles": ["markdown-preview.css"],
+  "[markdown]": {
+    "editor.fontSize": 17,
+    "editor.lineHeight": 1.65
+  }
+}

@@ -25,6 +25,10 @@ Each `DayNN/DayNN.md` file maps that day’s topics to **book chapters and secti
 
 Math in the notes uses **LaTeX**: inline `$...$`, and **display** math in GitHub’s **math** code fences (see [Day01/00-INDEX.md](Day01/00-INDEX.md)). On **github.com**, use the normal file view (not Raw)—MathJax ([docs](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)). Locally, use VS Code with a math-capable preview, Obsidian, Typora, etc.
 
+### Reading comfort
+
+GitHub does not let repositories change font size on **github.com**—use your browser zoom if needed (**Ctrl +** / **Ctrl + mouse wheel**). In **Cursor / VS Code**, this workspace sets a **larger Markdown preview** and **slightly larger editor font** for **all** `*.md` files (including every `README*.md` in the repo): see [`.vscode/settings.json`](.vscode/settings.json) and [`markdown-preview.css`](markdown-preview.css) at the repo root. Reload the Markdown preview after pulling changes.
+
 ---
 
 ## License and textbook
