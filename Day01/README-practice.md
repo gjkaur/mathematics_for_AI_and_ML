@@ -1,10 +1,12 @@
+<!-- Generated from README-practice.source.md by tools/render-math.mjs — do not edit by hand. -->
+
 # Day 1 — Practice problems (matrices & linear maps)
 
 Extra drill problems in the spirit of introductory linear algebra for ML. **All numbers below are original** (not taken from any particular worksheet). Math follows **GitHub’s Markdown math** ([MathJax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)): **inline** math with `$...$`, and **display** math in fenced blocks tagged with the `math` language (same pattern as [Day 1 index — How to read the math](00-INDEX.md#how-to-read-the-math)). Notation uses $A^\top$ for transpose; avoid unsupported macros such as `\operatorname`.
 
 > **Reading comfort:** Applies to all Markdown in this repo—see **[Reading comfort](../README.md#reading-comfort)** in the root `README.md`.
 
-> **GitHub rendering:** Main section titles use HTML (`<h2 id="sec1">` …) so the **Contents** links stay stable. Important identities are in **display** `math` blocks where possible. **Inline** column vectors: use `\cr` between rows inside `bmatrix` (e.g. `\begin{bmatrix} 1 \cr -1 \end{bmatrix}`)—a double backslash `\\` in inline `$...$` is often broken by Markdown, which looks like one symbol per line.
+> **GitHub rendering:** Section titles use HTML (`<h2 id="sec1">` …) for stable **Contents** links. **Display** math in ` ```math ` fences is **pre-rendered to PNG** in [`README-practice.md`](README-practice.md) (generated—do not edit that file by hand). **Inline** `$...$` still uses GitHub MathJax; for column vectors in inline math, `\cr` between rows avoids `\\` being mangled.
 
 **How to use this page:** Each section starts with **Teaching the idea**—intuition first, then rules, then typical mistakes. Read that block *before* the problem if you are new to the topic; use the problem to check understanding. The **Solution** then shows the calculation with short notes on *why* each step is legal.
 
@@ -29,17 +31,15 @@ Extra drill problems in the spirit of introductory linear algebra for ML. **All 
 
 **Intuition.** The **transpose** $A^\top$ “flips” the matrix: rows become columns and columns become rows. If $A$ has shape $m \times n$, then $A^\top$ has shape $n \times m$. Entrywise, the relationship between entries is:
 
-```math
-(A^\top)_{ij} = A_{ji}.
-```
+![display math](../assets/math/day01/readme-practice/eq-c80fc4996ae21100.png)
+
 
 **Why multiply $A$ by $A^\top$?** For a **tall** matrix $A$ ($m$ rows, $n$ columns), the product $AA^\top$ has size $m \times m$ (square). You can always form it: the inner dimensions are $n$ and $n$. Each number $(AA^\top)_{ij}$ is the **dot product** of row $i$ of $A$ with row $j$ of $A$—because column $j$ of $A^\top$ is exactly row $j$ of $A$ written as a column. So $AA^\top$ packages “how similar are all pairs of rows of $A$” in one matrix. That is why it is **symmetric** (same dot product if you swap $i$ and $j$). The companion $A^\top A$ is $n \times n$ and encodes dot products between **columns** of $A$. Both show up in least squares, Gram matrices, and covariance-style ideas.
 
 **Rules to remember** (transpose of a product reverses order):
 
-```math
-(A^\top)^\top = A,\qquad (AB)^\top = B^\top A^\top.
-```
+![display math](../assets/math/day01/readme-practice/eq-a323ff0f06576502.png)
+
 
 **Beginner pitfalls:** (1) Do not confuse $AA^\top$ with $A^\top A$—they have different sizes unless $A$ is square. (2) For a **row** vector $\mathbf{r}$, $\mathbf{r}^\top$ is a column; transposing twice returns the original shape.
 
@@ -47,9 +47,8 @@ Extra drill problems in the spirit of introductory linear algebra for ML. **All 
 
 Let
 
-```math
-A = \begin{bmatrix} 4 & 1 & -2 \\ 0 & 3 & 1 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-15fc3012fa6fa578.png)
+
 
 Compute $AA^\top$.
 
@@ -57,29 +56,23 @@ Compute $AA^\top$.
 
 **Step 1 — write $A^\top$.** Swap rows and columns of $A$:
 
-```math
-A^\top = \begin{bmatrix} 4 & 0 \\ 1 & 3 \\ -2 & 1 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-2808fa850a0f002f.png)
+
 
 **Step 2 — size check.** $A$ is $2 \times 3$, $A^\top$ is $3 \times 2$, so $AA^\top$ is $2 \times 2$.
 
 **Step 3 — fill entries.** Row $i$ of $A$ times column $j$ of $A^\top$ equals row $i$ of $A$ dot row $j$ of $A$:
 
-```math
-(AA^\top)_{11} = 4^2 + 1^2 + (-2)^2 = 16 + 1 + 4 = 21,\quad
-(AA^\top)_{12} = 4\cdot 0 + 1\cdot 3 + (-2)\cdot 1 = 1,
-```
+![display math](../assets/math/day01/readme-practice/eq-9dd3a5e04276cb28.png)
 
-```math
-(AA^\top)_{21} = (AA^\top)_{12} = 1,\quad
-(AA^\top)_{22} = 0^2 + 3^2 + 1^2 = 10.
-```
+
+![display math](../assets/math/day01/readme-practice/eq-73c5e6c3e9eb13bc.png)
+
 
 So
 
-```math
-AA^\top = \begin{bmatrix} 21 & 1 \\ 1 & 10 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-77ded3cf5be3971c.png)
+
 
 **Sanity check:** the result is symmetric (as theory predicts). If you ever get $AA^\top$ not symmetric, recheck arithmetic.
 
@@ -101,11 +94,8 @@ AA^\top = \begin{bmatrix} 21 & 1 \\ 1 & 10 \end{bmatrix}.
 
 Let
 
-```math
-A = \begin{bmatrix} 1 & 2 & 0 \\ 0 & 1 & 1 \end{bmatrix},
-\qquad
-B = \begin{bmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 1 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-325478df4393c38e.png)
+
 
 Compute $AB$ and $BA$. Are they equal?
 
@@ -113,26 +103,13 @@ Compute $AB$ and $BA$. Are they equal?
 
 **Product $AB$** ($2 \times 2$):
 
-```math
-AB =
-\begin{bmatrix}
-1\cdot 1 + 2\cdot 0 + 0\cdot 1 & 1\cdot 0 + 2\cdot 1 + 0\cdot 1 \\
-0\cdot 1 + 1\cdot 0 + 1\cdot 1 & 0\cdot 0 + 1\cdot 1 + 1\cdot 1
-\end{bmatrix}
-=
-\begin{bmatrix} 1 & 2 \\ 1 & 2 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-38312501de2ea8a5.png)
+
 
 **Product $BA$** ($3 \times 3$):
 
-```math
-BA =
-\begin{bmatrix}
-1 & 2 & 0 \\
-0 & 1 & 1 \\
-1 & 3 & 1
-\end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-5de6a1bb2ccc9f05.png)
+
 
 They are **not equal** (different shapes). This illustrates that matrix multiplication is **not** commutative in general.
 
@@ -156,11 +133,8 @@ They are **not equal** (different shapes). This illustrates that matrix multipli
 
 Let
 
-```math
-A = \begin{bmatrix} 3 & -1 & 2 \\ 1 & 0 & -1 \end{bmatrix},
-\qquad
-B = \begin{bmatrix} -1 & 2 & 0 \\ 0 & 1 & 1 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-392e528f3c7aa779.png)
+
 
 Find $2A + B$.
 
@@ -168,15 +142,13 @@ Find $2A + B$.
 
 **Step 1 — scale $A$:** multiply each entry by $2$.
 
-```math
-2A = \begin{bmatrix} 6 & -2 & 4 \\ 2 & 0 & -2 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-a7058d3587b9e741.png)
+
 
 **Step 2 — add $B$ entrywise:** $(2A+B)_{ij} = (2A)_{ij} + B_{ij}$.
 
-```math
-2A + B = \begin{bmatrix} 5 & 0 & 4 \\ 2 & 1 & -1 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-8082e16d339d9e20.png)
+
 
 ---
 
@@ -184,9 +156,8 @@ Find $2A + B$.
 
 Key identity (in display math so it does not break across lines on GitHub):
 
-```math
-A(B+C) = AB + AC.
-```
+![display math](../assets/math/day01/readme-practice/eq-5ae5190d71fc7c60.png)
+
 
 ### Teaching the idea
 
@@ -202,13 +173,8 @@ A(B+C) = AB + AC.
 
 Let
 
-```math
-A = \begin{bmatrix} 1 & 1 & 0 \\ 2 & 0 & 1 \end{bmatrix},
-\quad
-B = \begin{bmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 1 \end{bmatrix},
-\quad
-C = \begin{bmatrix} 3 & -1 \\ 1 & 0 \\ 0 & 1 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-bc22666016edceb1.png)
+
 
 Compute $A(B+C)$ and $AB + AC$, and confirm they agree.
 
@@ -216,35 +182,23 @@ Compute $A(B+C)$ and $AB + AC$, and confirm they agree.
 
 **Sum:**
 
-```math
-B + C = \begin{bmatrix} 4 & -1 \\ 1 & 1 \\ 1 & 2 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-5631fc104e8eb3bf.png)
+
 
 **Left-hand side:**
 
-```math
-A(B+C) =
-\begin{bmatrix}
-1 & 1 & 0 \\ 2 & 0 & 1
-\end{bmatrix}
-\begin{bmatrix} 4 & -1 \\ 1 & 1 \\ 1 & 2 \end{bmatrix}
-=
-\begin{bmatrix} 5 & 0 \\ 9 & 0 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-d09a0245a7c58a6d.png)
+
 
 **Right-hand side:** First,
 
-```math
-AB = \begin{bmatrix} 1 & 1 \\ 3 & 1 \end{bmatrix},
-\qquad
-AC = \begin{bmatrix} 4 & -1 \\ 6 & -1 \end{bmatrix},
-```
+![display math](../assets/math/day01/readme-practice/eq-704c596e6859c62f.png)
+
 
 so
 
-```math
-AB + AC = \begin{bmatrix} 5 & 0 \\ 9 & 0 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-e855da191785d0bc.png)
+
 
 Same matrix; distributivity checks out.
 
@@ -258,9 +212,8 @@ Same matrix; distributivity checks out.
 
 **Intuition.** In the plane, **rotating every vector** by a fixed angle $\theta$ around the origin is a **linear map**: rotating $\mathbf{u}+\mathbf{v}$ gives the same result as rotating $\mathbf{u}$ and $\mathbf{v}$ and then adding them; rotating $c\mathbf{u}$ is $c$ times the rotated $\mathbf{u}$. So it must be representable by a **matrix** $R(\theta)$. For **counterclockwise** rotation by $\theta$, the standard form is
 
-```math
-R(\theta) = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-6a89cd53d2a43ded.png)
+
 
 **How to read it:** The first column is where the basis vector $\mathbf{e}_1 = (1,0)^\top$ goes after rotation; the second column is where $\mathbf{e}_2 = (0,1)^\top$ goes. That fully determines the map.
 
@@ -272,11 +225,8 @@ R(\theta) = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta 
 
 Rotate each column vector by **$60^\circ$** counterclockwise:
 
-```math
-\mathbf{x}_1 = \begin{bmatrix} 1 \\ 4 \end{bmatrix},
-\qquad
-\mathbf{x}_2 = \begin{bmatrix} 2 \\ -1 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-e030d0b6474a5511.png)
+
 
 Use $\cos 60^\circ = \tfrac{1}{2}$ and $\sin 60^\circ = \tfrac{\sqrt{3}}{2}$.
 
@@ -284,39 +234,18 @@ Use $\cos 60^\circ = \tfrac{1}{2}$ and $\sin 60^\circ = \tfrac{\sqrt{3}}{2}$.
 
 **Build $R(60^\circ)$** with $\cos 60^\circ = \tfrac{1}{2}$, $\sin 60^\circ = \tfrac{\sqrt{3}}{2}$:
 
-```math
-R(60^\circ) = \begin{bmatrix} \tfrac{1}{2} & -\tfrac{\sqrt{3}}{2} \\ \tfrac{\sqrt{3}}{2} & \tfrac{1}{2} \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-511edd80aeebfc4c.png)
+
 
 **First vector:** multiply $R$ by $\mathbf{x}_1$ (first component of row 1 times $x_1$ plus second component times $x_2$):
 
-```math
-R\mathbf{x}_1 =
-\begin{bmatrix}
-\tfrac{1}{2}(1) - \tfrac{\sqrt{3}}{2}(4) \\
-\tfrac{\sqrt{3}}{2}(1) + \tfrac{1}{2}(4)
-\end{bmatrix}
-=
-\begin{bmatrix}
-\tfrac{1 - 4\sqrt{3}}{2} \\[4pt]
-\tfrac{\sqrt{3} + 4}{2}
-\end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-75a92378a4039e48.png)
+
 
 **Second vector:** same rule for $\mathbf{x}_2$:
 
-```math
-R\mathbf{x}_2 =
-\begin{bmatrix}
-\tfrac{1}{2}(2) - \tfrac{\sqrt{3}}{2}(-1) \\
-\tfrac{\sqrt{3}}{2}(2) + \tfrac{1}{2}(-1)
-\end{bmatrix}
-=
-\begin{bmatrix}
-\tfrac{2 + \sqrt{3}}{2} \\[4pt]
-\tfrac{2\sqrt{3} - 1}{2}
-\end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-84acf58f2790ac89.png)
+
 
 **Geometric check (optional):** sketch $\mathbf{x}_1$ in the first quadrant; after $60^\circ$ CCW, the vector should rotate toward the positive $y$-axis—your new coordinates should match that picture qualitatively.
 
@@ -340,9 +269,8 @@ R\mathbf{x}_2 =
 
 Let
 
-```math
-A = \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-1fcd7502c126bc44.png)
+
 
 Find all eigenvalues and corresponding eigenvectors.
 
@@ -350,27 +278,22 @@ Find all eigenvalues and corresponding eigenvectors.
 
 **Step 1 — characteristic polynomial.** Form $A - \lambda I$ and take the determinant:
 
-```math
-\det(A - \lambda I) = (2-\lambda)^2 - 1 = \lambda^2 - 4\lambda + 3 = (\lambda - 1)(\lambda - 3).
-```
+![display math](../assets/math/day01/readme-practice/eq-5528e5f6deed03cc.png)
+
 
 Eigenvalues: $\lambda_1 = 1$, $\lambda_2 = 3$.
 
 **Step 2 — eigenvectors for $\lambda = 1$.** Solve $(A - I)\mathbf{v} = \mathbf{0}$:
 
-```math
-\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}\begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \mathbf{0}
-\quad\Rightarrow\quad v_1 + v_2 = 0.
-```
+![display math](../assets/math/day01/readme-practice/eq-b4c99ff700b926e7.png)
+
 
 Pick $v_1 = 1$, then $v_2 = -1$. One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \cr -1 \end{bmatrix}$ (any nonzero scalar multiple).
 
 **Step 3 — eigenvectors for $\lambda = 3$.** Solve $(A - 3I)\mathbf{v} = \mathbf{0}$:
 
-```math
-\begin{bmatrix} -1 & 1 \\ 1 & -1 \end{bmatrix}\begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \mathbf{0}
-\quad\Rightarrow\quad v_1 = v_2.
-```
+![display math](../assets/math/day01/readme-practice/eq-9a2e9204e976c2fd.png)
+
 
 One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \cr 1 \end{bmatrix}$.
 
@@ -396,9 +319,8 @@ One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \cr 1 \end{bmatrix}$.
 
 Find the rank of
 
-```math
-A = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 0 & 1 \\ 3 & 2 & 3 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-050f2eb0cbe577d6.png)
+
 
 ### Solution
 
@@ -406,21 +328,18 @@ A = \begin{bmatrix} 1 & 2 & 2 \\ 2 & 0 & 1 \\ 3 & 2 & 3 \end{bmatrix}.
 
 **Step 2 — eliminate.** Subtract $2 \times$ row 1 from row 2, and $3 \times$ row 1 from row 3:
 
-```math
-\begin{bmatrix} 1 & 2 & 2 \\ 0 & -4 & -3 \\ 0 & -4 & -3 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-64a3c3b664ff69b7.png)
+
 
 Then subtract row 2 from row 3:
 
-```math
-\begin{bmatrix} 1 & 2 & 2 \\ 0 & -4 & -3 \\ 0 & 0 & 0 \end{bmatrix}.
-```
+![display math](../assets/math/day01/readme-practice/eq-2d3865e7f4d8b97f.png)
+
 
 **Step 3 — count pivots.** There are leading entries (pivots) in columns 1 and 2, so
 
-```math
-\mathrm{rank}(A) = 2.
-```
+![display math](../assets/math/day01/readme-practice/eq-b26c6cab256b7f30.png)
+
 
 **Interpretation:** The first two rows are not multiples of each other, so they contribute two independent directions; the third row adds nothing new. The column space is a **plane** through the origin in $\mathbb{R}^3$ (a 2-dimensional subspace).
 
@@ -432,9 +351,8 @@ Below, each fact is in its own **display** block so GitHub does not split symbol
 
 **Transpose — entry and product rule**
 
-```math
-(A^\top)_{ij} = A_{ji},\qquad (AB)^\top = B^\top A^\top.
-```
+![display math](../assets/math/day01/readme-practice/eq-78ed481465ba0b1c.png)
+
 
 *Plain words:* flip rows/columns; for a product, reverse order when transposing.
 
@@ -446,17 +364,15 @@ Symmetric; sizes $m \times m$ and $n \times n$ for $A \in \mathbb{R}^{m \times n
 
 Inner dimensions must match; usually:
 
-```math
-AB \neq BA.
-```
+![display math](../assets/math/day01/readme-practice/eq-1e073684f266efa8.png)
+
 
 *Plain words:* order matters; shapes of $AB$ and $BA$ can differ.
 
 **Distributivity**
 
-```math
-A(B+C) = AB + AC,\qquad (B+C)A = BA + CA
-```
+![display math](../assets/math/day01/readme-practice/eq-579213426dc32e47.png)
+
 
 (when dimensions match). *Plain words:* like $a(b+c)=ab+ac$, but check shapes.
 
@@ -464,9 +380,8 @@ A(B+C) = AB + AC,\qquad (B+C)A = BA + CA
 
 **Eigenvalues**
 
-```math
-\det(A - \lambda I) = 0.
-```
+![display math](../assets/math/day01/readme-practice/eq-35adb4a65387928c.png)
+
 
 *Plain words:* the $\lambda$ for which $A\mathbf{v}=\lambda\mathbf{v}$ has a nonzero $\mathbf{v}$.
 

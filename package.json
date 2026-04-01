@@ -1,0 +1,15 @@
+{
+  "name": "mathematics-for-ai-ml",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render:math": "node tools/render-math.mjs",
+    "setup:playwright": "npx playwright install --with-deps chromium",
+    "practice:all": "npm install && npm run setup:playwright && npm run render:math",
+    "practice:render": "npm run render:math"
+  },
+  "dependencies": {
+    "katex": "0.16.11",
+    "playwright": "1.49.1"
+  }
+}

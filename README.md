@@ -31,6 +31,23 @@ On **github.com**, open the normal file view (not Raw) so formulas render—see 
 
 GitHub does not let repositories change font size on **github.com**—use your browser zoom if needed (**Ctrl +** / **Ctrl + mouse wheel**). In **Cursor / VS Code**, this workspace sets a **larger Markdown preview** and **slightly larger editor font** for **all** `*.md` files (including every `README*.md` in the repo): see [`.vscode/settings.json`](.vscode/settings.json) and [`markdown-preview.css`](markdown-preview.css) at the repo root. Reload the Markdown preview after pulling changes.
 
+### Day 1 practice sheet (reliable display math on GitHub)
+
+- **Read:** [`Day01/README-practice.md`](Day01/README-practice.md) — display math is **PNG images** (reliable in the normal GitHub file view).
+- **Edit only:** [`Day01/README-practice.source.md`](Day01/README-practice.source.md) (use ` ```math ` fences for display formulas). Do **not** edit `README-practice.md` by hand.
+
+**Automated path (recommended):** Push changes to `README-practice.source.md` on **`main`**. The workflow [`.github/workflows/render-math.yml`](.github/workflows/render-math.yml) runs on the server, regenerates PNGs and `README-practice.md`, and **commits** them—you do not need Node installed for that.
+
+**Local one-shot (first time or to preview before push):** In the repo root, run:
+
+```bash
+npm run practice:all
+```
+
+That installs npm dependencies, installs Playwright’s Chromium, and runs the renderer. Later edits only need `npm run practice:render` (or `npm run render:math`) if dependencies are already installed.
+
+**Cursor / VS Code:** Run the task **Practice: full render** (from the command palette: “Tasks: Run Task”) to execute the same steps.
+
 ---
 
 ## License and textbook

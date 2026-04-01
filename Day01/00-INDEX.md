@@ -26,6 +26,8 @@ Example:
 
 The **YouTube companion** pages under [`youtube/`](youtube/README.md) use plain Unicode for short lines; the **topic notes** here use full LaTeX in inline `$...$` and in display math fences as shown above.
 
+**Day 1 practice sheet:** [`README-practice.md`](README-practice.md) is **generated** (display math as PNG). Edit [`README-practice.source.md`](README-practice.source.md); push to `main` and CI regenerates outputs, or run `npm run practice:all` locally once (see root [`README.md`](../README.md)).
+
 ---
 
 ## Topic list
