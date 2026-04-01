@@ -79,7 +79,7 @@ Given $\mathbf{v}_1,\ldots,\mathbf{v}_k \in \mathbb{R}^n$, their **span** is the
 
 
 ```math
-\operatorname{span}\{\mathbf{v}_1,\ldots,\mathbf{v}_k\}
+\mathrm{span}\{\mathbf{v}_1,\ldots,\mathbf{v}_k\}
 = \left\{ \alpha_1 \mathbf{v}_1 + \cdots + \alpha_k \mathbf{v}_k \;\middle|\; \alpha_i \in \mathbb{R} \right\}.
 
 ```
@@ -134,7 +134,7 @@ Solve
 ```
 
 
-Add: $2\alpha_1 = 4 \Rightarrow \alpha_1 = 2$. Then $\alpha_2 = -2$. **Check:** $2(1,1) - 2(1,-1) = (0,4)^\top$. So $\mathbf{b} \in \operatorname{span}\{\mathbf{v}_1,\mathbf{v}_2\}$ (and in fact $\{\mathbf{v}_1,\mathbf{v}_2\}$ spans all of $\mathbb{R}^2$).
+Add: $2\alpha_1 = 4 \Rightarrow \alpha_1 = 2$. Then $\alpha_2 = -2$. **Check:** $2(1,1) - 2(1,-1) = (0,4)^\top$. So $\mathbf{b} \in \mathrm{span}\{\mathbf{v}_1,\mathbf{v}_2\}$ (and in fact $\{\mathbf{v}_1,\mathbf{v}_2\}$ spans all of $\mathbb{R}^2$).
 
 ---
 
