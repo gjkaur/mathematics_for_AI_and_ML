@@ -317,7 +317,7 @@ R\mathbf{x}_2 =
 
 **Why eigenstuff matters in ML:** Many algorithms use **principal directions** of variation (PCA), **stability** of iterations (eigenvalues of Jacobians), and **spectral** views of graphs and kernels. The $2 \times 2$ case is where you learn the pattern without heavy notation.
 
-**Beginner pitfalls:** (1) Forgetting the **$-\lambda$** on the diagonal when forming $A - \lambda I$. (2) Plugging an eigenvalue into $\det(A - \lambda I)$ to “check”—you should get **zero**, not an eigenvector. (3) Confusing eigenvector with eigenvalue—one is a vector, one is a scalar.
+**Beginner pitfalls:** (1) Forgetting the ${-}\lambda$ entries on the diagonal when forming $A - \lambda I$. (2) Plugging an eigenvalue into $\det(A - \lambda I)$ to “check”—you should get **zero**, not an eigenvector. (3) Confusing eigenvector with eigenvalue—one is a vector, one is a scalar.
 
 ### Problem
 

@@ -13,6 +13,7 @@ These notes are formatted for **GitHub Flavored Markdown** math ([MathJax](https
 - **Inline:** `$ ... $` (e.g. `$A\mathbf{x}=\mathbf{b}$`)
 - **Display:** Use a **math** fenced block. Open with a line containing only three backticks followed immediately by the word `math`, put the formula on the next lines, then close with a line containing only three backticks (see the example below).
 - **GitHub tip:** Those fence lines must **not** be indented with spaces. If the opening line starts with four spaces, GitHub treats the block as ordinary code, not math.
+- **Unary minus in inline math:** If a formula that *starts* with a minus right after the opening delimiter does not render on GitHub, group the minus with braces (standard LaTeX): write `{-}` first inside the math, then the rest (for example lambda as `{-}\lambda` inside the same pair of dollar signs). Avoid putting Markdown **bold** markers immediately before math that would begin with “dollar, minus, …”—put emphasis on nearby words instead.
 
 Example:
 
