@@ -4,7 +4,7 @@ Extra drill problems in the spirit of introductory linear algebra for ML. **All 
 
 > **Reading comfort:** Applies to all Markdown in this repo—see **[Reading comfort](../README.md#reading-comfort)** in the root `README.md`.
 
-> **GitHub rendering:** Main section titles use HTML (`<h2 id="sec1">` …) so the **Contents** links stay stable. Important identities (transpose entry rule, $(AB)^\top$, distributive law, etc.) are in **display** `math` blocks so formulas are not split into one symbol per line.
+> **GitHub rendering:** Main section titles use HTML (`<h2 id="sec1">` …) so the **Contents** links stay stable. Important identities are in **display** `math` blocks where possible. **Inline** column vectors: use `\cr` between rows inside `bmatrix` (e.g. `\begin{bmatrix} 1 \cr -1 \end{bmatrix}`)—a double backslash `\\` in inline `$...$` is often broken by Markdown, which looks like one symbol per line.
 
 **How to use this page:** Each section starts with **Teaching the idea**—intuition first, then rules, then typical mistakes. Read that block *before* the problem if you are new to the topic; use the problem to check understanding. The **Solution** then shows the calculation with short notes on *why* each step is legal.
 
@@ -363,7 +363,7 @@ Eigenvalues: $\lambda_1 = 1$, $\lambda_2 = 3$.
 \quad\Rightarrow\quad v_1 + v_2 = 0.
 ```
 
-Pick $v_1 = 1$, then $v_2 = -1$. One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$ (any nonzero scalar multiple).
+Pick $v_1 = 1$, then $v_2 = -1$. One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \cr -1 \end{bmatrix}$ (any nonzero scalar multiple).
 
 **Step 3 — eigenvectors for $\lambda = 3$.** Solve $(A - 3I)\mathbf{v} = \mathbf{0}$:
 
@@ -372,9 +372,9 @@ Pick $v_1 = 1$, then $v_2 = -1$. One eigenvector is $\mathbf{v} = \begin{bmatrix
 \quad\Rightarrow\quad v_1 = v_2.
 ```
 
-One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}$.
+One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \cr 1 \end{bmatrix}$.
 
-**Verification (recommended):** $A\begin{bmatrix} 1 \\ -1 \end{bmatrix} = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$, $A\begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 3 \end{bmatrix}$—each output equals eigenvalue times input.
+**Verification (recommended):** $A\begin{bmatrix} 1 \cr -1 \end{bmatrix} = \begin{bmatrix} 1 \cr -1 \end{bmatrix}$, $A\begin{bmatrix} 1 \cr 1 \end{bmatrix} = \begin{bmatrix} 3 \cr 3 \end{bmatrix}$—each output equals eigenvalue times input.
 
 ---
 
