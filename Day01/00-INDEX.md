@@ -11,7 +11,8 @@ Every topic note begins with **Why learn this?** — motivation, **where the ide
 These notes are formatted for **GitHub Flavored Markdown** math ([MathJax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)):
 
 - **Inline:** `$ ... $` (e.g. `$A\mathbf{x}=\mathbf{b}$`)
-- **Display:** GitHub **math** code fences: an opening line `` ```math ``, the formula, then a closing line `` ``` `` on its own (see the example below).
+- **Display:** Use a **math** fenced block. Open with a line containing only three backticks followed immediately by the word `math`, put the formula on the next lines, then close with a line containing only three backticks (see the example below).
+- **GitHub tip:** Those fence lines must **not** be indented with spaces. If the opening line starts with four spaces, GitHub treats the block as ordinary code, not math.
 
 Example:
 

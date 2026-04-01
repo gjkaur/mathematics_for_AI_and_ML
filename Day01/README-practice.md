@@ -1,6 +1,6 @@
 # Day 1 — Practice problems (matrices & linear maps)
 
-Extra drill problems in the spirit of introductory linear algebra for ML. **All numbers below are original** (not taken from any particular worksheet). Math is written for **GitHub’s Markdown math** ([MathJax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)): inline `$...$`, display in ` ```math ` fences. Notation uses $A^\top$ for transpose; avoid unsupported macros such as `\operatorname`.
+Extra drill problems in the spirit of introductory linear algebra for ML. **All numbers below are original** (not taken from any particular worksheet). Math follows **GitHub’s Markdown math** ([MathJax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)): **inline** math with `$...$`, and **display** math in fenced blocks tagged with the `math` language (same pattern as [Day 1 index — How to read the math](00-INDEX.md#how-to-read-the-math)). Notation uses $A^\top$ for transpose; avoid unsupported macros such as `\operatorname`.
 
 > **Reading comfort:** Applies to all Markdown in this repo—see **[Reading comfort](../README.md#reading-comfort)** in the root `README.md`.
 
@@ -411,15 +411,21 @@ Then subtract row 2 from row 3:
 
 ## Quick reference (formulas)
 
-| Topic | Core fact | In plain words |
-|--------|-----------|----------------|
-| Transpose | $(A^\top)_{ij} = A_{ji}$; $(AB)^\top = B^\top A^\top$ | Flip rows/columns; for a product, reverse order when transposing. |
-| $AA^\top$, $A^\top A$ | Symmetric; sizes $m \times m$ and $n \times n$ for $A \in \mathbb{R}^{m \times n}$ | “All dot products of rows” (or of columns); square and symmetric. |
-| $AB$ vs $BA$ | Sizes must match inner dimensions; usually $AB \neq BA$ | Order of multiplication matters; different shapes are possible. |
-| Distributivity | $A(B+C) = AB + AC$, $(B+C)A = BA + CA$ | Same idea as $a(b+c)=ab+ac$, but watch matrix shapes. |
-| Rotation in $\mathbb{R}^2$ | $R(\theta)$ as in §5; $R^\top R = I$ | One fixed angle for every vector; preserves lengths. |
-| Eigenvalues | $\det(A - \lambda I) = 0$ | Numbers $\lambda$ for which $A\mathbf{v}=\lambda\mathbf{v}$ has a nonzero $\mathbf{v}$. |
-| Rank | Number of pivots after Gaussian elimination | How many independent rows (or columns) you really have. |
+Each item: **fact**, then a short plain-language gloss (easier to read on small screens than a wide table).
+
+- **Transpose.** $(A^\top)_{ij} = A_{ji}$; $(AB)^\top = B^\top A^\top$. *Plain words:* flip rows and columns; for a product, reverse order when transposing.
+
+- **$AA^\top$ and $A^\top A$.** Symmetric; sizes $m \times m$ and $n \times n$ for $A \in \mathbb{R}^{m \times n}$. *Plain words:* all dot products of rows (or of columns); both matrices are square and symmetric.
+
+- **$AB$ vs $BA$.** Inner dimensions must match; usually $AB \neq BA$. *Plain words:* order matters; $AB$ and $BA$ can even have different shapes.
+
+- **Distributivity.** $A(B+C) = AB + AC$; $(B+C)A = BA + CA$ when the products exist. *Plain words:* same idea as $a(b+c)=ab+ac$, but always check matrix shapes.
+
+- **Rotation in $\mathbb{R}^2$.** $R(\theta)$ as in §5; $R^\top R = I$. *Plain words:* one fixed angle for every vector; lengths are preserved.
+
+- **Eigenvalues.** $\det(A - \lambda I) = 0$. *Plain words:* the numbers $\lambda$ for which $A\mathbf{v}=\lambda\mathbf{v}$ has a nonzero solution $\mathbf{v}$.
+
+- **Rank.** Number of pivots after Gaussian elimination. *Plain words:* how many independent rows (or columns) you really have.
 
 **Suggested order for first read:** §1 → §3 (easy arithmetic) → §2 (multiplication rules) → §4 (uses §2) → §5–§7 (geometry and structure).
 
