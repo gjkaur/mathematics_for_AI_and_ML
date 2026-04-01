@@ -63,10 +63,10 @@ Compute $AA^\top$.
 
 **Step 3 — fill entries.** Row $i$ of $A$ times column $j$ of $A^\top$ equals row $i$ of $A$ dot row $j$ of $A$:
 
-![display math](../assets/math/day01/readme-practice/eq-9dd3a5e04276cb28.png)
+![display math](../assets/math/day01/readme-practice/eq-eb8d9ccc461e8d8b.png)
 
 
-![display math](../assets/math/day01/readme-practice/eq-73c5e6c3e9eb13bc.png)
+![display math](../assets/math/day01/readme-practice/eq-c201522298512313.png)
 
 
 So
@@ -94,7 +94,7 @@ So
 
 Let
 
-![display math](../assets/math/day01/readme-practice/eq-325478df4393c38e.png)
+![display math](../assets/math/day01/readme-practice/eq-5cc15fd1876badda.png)
 
 
 Compute $AB$ and $BA$. Are they equal?
@@ -103,12 +103,12 @@ Compute $AB$ and $BA$. Are they equal?
 
 **Product $AB$** ($2 \times 2$):
 
-![display math](../assets/math/day01/readme-practice/eq-38312501de2ea8a5.png)
+![display math](../assets/math/day01/readme-practice/eq-86bc97a754c6bbd5.png)
 
 
 **Product $BA$** ($3 \times 3$):
 
-![display math](../assets/math/day01/readme-practice/eq-5de6a1bb2ccc9f05.png)
+![display math](../assets/math/day01/readme-practice/eq-3efc5986def57bcc.png)
 
 
 They are **not equal** (different shapes). This illustrates that matrix multiplication is **not** commutative in general.
@@ -133,7 +133,7 @@ They are **not equal** (different shapes). This illustrates that matrix multipli
 
 Let
 
-![display math](../assets/math/day01/readme-practice/eq-392e528f3c7aa779.png)
+![display math](../assets/math/day01/readme-practice/eq-f2c8a50059355b2b.png)
 
 
 Find $2A + B$.
@@ -173,7 +173,7 @@ Key identity (in display math so it does not break across lines on GitHub):
 
 Let
 
-![display math](../assets/math/day01/readme-practice/eq-bc22666016edceb1.png)
+![display math](../assets/math/day01/readme-practice/eq-01f69c1fee91f0f8.png)
 
 
 Compute $A(B+C)$ and $AB + AC$, and confirm they agree.
@@ -187,12 +187,12 @@ Compute $A(B+C)$ and $AB + AC$, and confirm they agree.
 
 **Left-hand side:**
 
-![display math](../assets/math/day01/readme-practice/eq-d09a0245a7c58a6d.png)
+![display math](../assets/math/day01/readme-practice/eq-d2292ed2d8e335e2.png)
 
 
 **Right-hand side:** First,
 
-![display math](../assets/math/day01/readme-practice/eq-704c596e6859c62f.png)
+![display math](../assets/math/day01/readme-practice/eq-f24fd138a719377f.png)
 
 
 so
@@ -225,7 +225,7 @@ Same matrix; distributivity checks out.
 
 Rotate each column vector by **$60^\circ$** counterclockwise:
 
-![display math](../assets/math/day01/readme-practice/eq-e030d0b6474a5511.png)
+![display math](../assets/math/day01/readme-practice/eq-bde72e2412847b8e.png)
 
 
 Use $\cos 60^\circ = \tfrac{1}{2}$ and $\sin 60^\circ = \tfrac{\sqrt{3}}{2}$.
@@ -239,12 +239,12 @@ Use $\cos 60^\circ = \tfrac{1}{2}$ and $\sin 60^\circ = \tfrac{\sqrt{3}}{2}$.
 
 **First vector:** multiply $R$ by $\mathbf{x}_1$ (first component of row 1 times $x_1$ plus second component times $x_2$):
 
-![display math](../assets/math/day01/readme-practice/eq-75a92378a4039e48.png)
+![display math](../assets/math/day01/readme-practice/eq-46be0b62b80f7c05.png)
 
 
 **Second vector:** same rule for $\mathbf{x}_2$:
 
-![display math](../assets/math/day01/readme-practice/eq-84acf58f2790ac89.png)
+![display math](../assets/math/day01/readme-practice/eq-e4e9b5e7b2ecc2ed.png)
 
 
 **Geometric check (optional):** sketch $\mathbf{x}_1$ in the first quadrant; after $60^\circ$ CCW, the vector should rotate toward the positive $y$-axis—your new coordinates should match that picture qualitatively.
@@ -285,14 +285,14 @@ Eigenvalues: $\lambda_1 = 1$, $\lambda_2 = 3$.
 
 **Step 2 — eigenvectors for $\lambda = 1$.** Solve $(A - I)\mathbf{v} = \mathbf{0}$:
 
-![display math](../assets/math/day01/readme-practice/eq-b4c99ff700b926e7.png)
+![display math](../assets/math/day01/readme-practice/eq-db1a29f21373fa7b.png)
 
 
 Pick $v_1 = 1$, then $v_2 = -1$. One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \cr -1 \end{bmatrix}$ (any nonzero scalar multiple).
 
 **Step 3 — eigenvectors for $\lambda = 3$.** Solve $(A - 3I)\mathbf{v} = \mathbf{0}$:
 
-![display math](../assets/math/day01/readme-practice/eq-9a2e9204e976c2fd.png)
+![display math](../assets/math/day01/readme-practice/eq-050749fdcfd8b546.png)
 
 
 One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \cr 1 \end{bmatrix}$.
