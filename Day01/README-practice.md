@@ -4,31 +4,42 @@ Extra drill problems in the spirit of introductory linear algebra for ML. **All 
 
 > **Reading comfort:** Applies to all Markdown in this repo—see **[Reading comfort](../README.md#reading-comfort)** in the root `README.md`.
 
+> **GitHub rendering:** Main section titles use HTML (`<h2 id="sec1">` …) so the **Contents** links stay stable. Important identities (transpose entry rule, $(AB)^\top$, distributive law, etc.) are in **display** `math` blocks so formulas are not split into one symbol per line.
+
 **How to use this page:** Each section starts with **Teaching the idea**—intuition first, then rules, then typical mistakes. Read that block *before* the problem if you are new to the topic; use the problem to check understanding. The **Solution** then shows the calculation with short notes on *why* each step is legal.
 
 ---
 
 ## Contents
 
-1. [Transpose and $AA^\top$](#1-transpose-and-aa-top)
-2. [Products $AB$ and $BA$ (non-commutativity)](#2-products-ab-and-ba-non-commutativity)
-3. [Scalar multiplication and matrix addition](#3-scalar-multiplication-and-matrix-addition)
-4. [Distributive law $A(B+C) = AB + AC$](#4-distributive-law-abc--ab--ac)
-5. [Plane rotation of vectors](#5-plane-rotation-of-vectors)
-6. [Eigenvalues and eigenvectors ($2 \times 2$)](#6-eigenvalues-and-eigenvectors-2-times-2)
-7. [Rank of a matrix ($3 \times 3$)](#7-rank-of-a-matrix-3-times-3)
+1. [Transpose and AA<sup>T</sup>](#sec1)
+2. [Products AB and BA](#sec2)
+3. [Scalar multiplication and addition](#sec3)
+4. [Distributive law](#sec4)
+5. [Plane rotation](#sec5)
+6. [Eigenvalues (2×2)](#sec6)
+7. [Rank (3×3)](#sec7)
+8. [Quick reference](#sec-ref)
 
 ---
 
-## 1. Transpose and $AA^\top$
+<h2 id="sec1">1. Transpose and AA<sup>T</sup></h2>
 
 ### Teaching the idea
 
-**Intuition.** The **transpose** $A^\top$ “flips” the matrix: rows become columns and columns become rows. If $A$ has shape $m \times n$ (read as “$m$ rows, $n$ columns”), then $A^\top$ has shape $n \times m$. Think of it as turning a spreadsheet on its side: the entry that was in row $i$, column $j$ moves to row $j$, column $i$, so $(A^\top)_{ij} = A_{ji}$.
+**Intuition.** The **transpose** $A^\top$ “flips” the matrix: rows become columns and columns become rows. If $A$ has shape $m \times n$, then $A^\top$ has shape $n \times m$. Entrywise, the relationship between entries is:
+
+```math
+(A^\top)_{ij} = A_{ji}.
+```
 
 **Why multiply $A$ by $A^\top$?** For a **tall** matrix $A$ ($m$ rows, $n$ columns), the product $AA^\top$ has size $m \times m$ (square). You can always form it: the inner dimensions are $n$ and $n$. Each number $(AA^\top)_{ij}$ is the **dot product** of row $i$ of $A$ with row $j$ of $A$—because column $j$ of $A^\top$ is exactly row $j$ of $A$ written as a column. So $AA^\top$ packages “how similar are all pairs of rows of $A$” in one matrix. That is why it is **symmetric** (same dot product if you swap $i$ and $j$). The companion $A^\top A$ is $n \times n$ and encodes dot products between **columns** of $A$. Both show up in least squares, Gram matrices, and covariance-style ideas.
 
-**Rules to remember:** $(A^\top)^\top = A$; $(AB)^\top = B^\top A^\top$ (order reverses).
+**Rules to remember** (transpose of a product reverses order):
+
+```math
+(A^\top)^\top = A,\qquad (AB)^\top = B^\top A^\top.
+```
 
 **Beginner pitfalls:** (1) Do not confuse $AA^\top$ with $A^\top A$—they have different sizes unless $A$ is square. (2) For a **row** vector $\mathbf{r}$, $\mathbf{r}^\top$ is a column; transposing twice returns the original shape.
 
@@ -74,7 +85,7 @@ AA^\top = \begin{bmatrix} 21 & 1 \\ 1 & 10 \end{bmatrix}.
 
 ---
 
-## 2. Products $AB$ and $BA$ (non-commutativity)
+<h2 id="sec2">2. Products AB and BA (not commutative)</h2>
 
 ### Teaching the idea
 
@@ -129,7 +140,7 @@ They are **not equal** (different shapes). This illustrates that matrix multipli
 
 ---
 
-## 3. Scalar multiplication and matrix addition
+<h2 id="sec3">3. Scalar multiplication and matrix addition</h2>
 
 ### Teaching the idea
 
@@ -169,7 +180,13 @@ Find $2A + B$.
 
 ---
 
-## 4. Distributive law $A(B+C) = AB + AC$
+<h2 id="sec4">4. Distributive law</h2>
+
+Key identity (in display math so it does not break across lines on GitHub):
+
+```math
+A(B+C) = AB + AC.
+```
 
 ### Teaching the idea
 
@@ -235,7 +252,7 @@ Same matrix; distributivity checks out.
 
 ---
 
-## 5. Plane rotation of vectors
+<h2 id="sec5">5. Plane rotation of vectors</h2>
 
 ### Teaching the idea
 
@@ -305,7 +322,7 @@ R\mathbf{x}_2 =
 
 ---
 
-## 6. Eigenvalues and eigenvectors ($2 \times 2$)
+<h2 id="sec6">6. Eigenvalues and eigenvectors (2×2)</h2>
 
 ### Teaching the idea
 
@@ -361,7 +378,7 @@ One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}$.
 
 ---
 
-## 7. Rank of a matrix ($3 \times 3$)
+<h2 id="sec7">7. Rank of a matrix (3×3)</h2>
 
 ### Teaching the idea
 
@@ -409,25 +426,57 @@ Then subtract row 2 from row 3:
 
 ---
 
-## Quick reference (formulas)
+<h2 id="sec-ref">Quick reference (formulas)</h2>
 
-Each item: **fact**, then a short plain-language gloss (easier to read on small screens than a wide table).
+Below, each fact is in its own **display** block so GitHub does not split symbols across lines.
 
-- **Transpose.** $(A^\top)_{ij} = A_{ji}$; $(AB)^\top = B^\top A^\top$. *Plain words:* flip rows and columns; for a product, reverse order when transposing.
+**Transpose — entry and product rule**
 
-- **$AA^\top$ and $A^\top A$.** Symmetric; sizes $m \times m$ and $n \times n$ for $A \in \mathbb{R}^{m \times n}$. *Plain words:* all dot products of rows (or of columns); both matrices are square and symmetric.
+```math
+(A^\top)_{ij} = A_{ji},\qquad (AB)^\top = B^\top A^\top.
+```
 
-- **$AB$ vs $BA$.** Inner dimensions must match; usually $AB \neq BA$. *Plain words:* order matters; $AB$ and $BA$ can even have different shapes.
+*Plain words:* flip rows/columns; for a product, reverse order when transposing.
 
-- **Distributivity.** $A(B+C) = AB + AC$; $(B+C)A = BA + CA$ when the products exist. *Plain words:* same idea as $a(b+c)=ab+ac$, but always check matrix shapes.
+**Gram matrices:** $AA^\top$ and $A^\top A$.
 
-- **Rotation in $\mathbb{R}^2$.** $R(\theta)$ as in §5; $R^\top R = I$. *Plain words:* one fixed angle for every vector; lengths are preserved.
+Symmetric; sizes $m \times m$ and $n \times n$ for $A \in \mathbb{R}^{m \times n}$. *Plain words:* dot products of rows (or columns); both are square and symmetric.
 
-- **Eigenvalues.** $\det(A - \lambda I) = 0$. *Plain words:* the numbers $\lambda$ for which $A\mathbf{v}=\lambda\mathbf{v}$ has a nonzero solution $\mathbf{v}$.
+**Products:** $AB$ versus $BA$.
 
-- **Rank.** Number of pivots after Gaussian elimination. *Plain words:* how many independent rows (or columns) you really have.
+Inner dimensions must match; usually:
 
-**Suggested order for first read:** §1 → §3 (easy arithmetic) → §2 (multiplication rules) → §4 (uses §2) → §5–§7 (geometry and structure).
+```math
+AB \neq BA.
+```
+
+*Plain words:* order matters; shapes of $AB$ and $BA$ can differ.
+
+**Distributivity**
+
+```math
+A(B+C) = AB + AC,\qquad (B+C)A = BA + CA
+```
+
+(when dimensions match). *Plain words:* like $a(b+c)=ab+ac$, but check shapes.
+
+**Rotation in** $\mathbb{R}^2$: $R(\theta)$ as in section 5; orthogonal matrices satisfy $R^\top R = I$. *Plain words:* one angle for all vectors; lengths preserved.
+
+**Eigenvalues**
+
+```math
+\det(A - \lambda I) = 0.
+```
+
+*Plain words:* the $\lambda$ for which $A\mathbf{v}=\lambda\mathbf{v}$ has a nonzero $\mathbf{v}$.
+
+**Rank**
+
+Count pivots after Gaussian elimination. *Plain words:* number of independent rows (or columns).
+
+---
+
+**Suggested order for first read:** sections 1 → 3 (arithmetic) → 2 (multiplication) → 4 → 5–7 (geometry and structure).
 
 ---
 
