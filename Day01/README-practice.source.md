@@ -376,7 +376,7 @@ Pick $v_1 = 1$, then $v_2 = -1$. One eigenvector is $\mathbf{v}_1 = \begin{bmatr
 
 One eigenvector is $\mathbf{v}_2 = \begin{bmatrix} 1 \cr 1 \end{bmatrix}$.
 
-**Verification (recommended):** $A\mathbf{v}_1 = A\begin{bmatrix} 1 \cr -1 \end{bmatrix} = \begin{bmatrix} 1 \cr -1 \end{bmatrix} = 1\,\mathbf{v}_1$, and $A\mathbf{v}_2 = A\begin{bmatrix} 1 \cr 1 \end{bmatrix} = \begin{bmatrix} 3 \cr 3 \end{bmatrix} = 3\,\mathbf{v}_2$—each output equals eigenvalue times input.
+**Verification (recommended):** $A\mathbf{v}_1 = A\begin{bmatrix} 1 \cr -1 \end{bmatrix} = \begin{bmatrix} 1 \cr -1 \end{bmatrix} = \lambda_1\mathbf{v}_1$ and $A\mathbf{v}_2 = A\begin{bmatrix} 1 \cr 1 \end{bmatrix} = \begin{bmatrix} 3 \cr 3 \end{bmatrix} = \lambda_2\mathbf{v}_2$ (with $\lambda_1=1$, $\lambda_2=3$ from Step 1)—each output equals eigenvalue times input.
 
 ---
 
