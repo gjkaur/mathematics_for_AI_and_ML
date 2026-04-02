@@ -1,4 +1,4 @@
-<!-- Generated from README-practice.source.md by tools/render-math.mjs — do not edit by hand. -->
+<!-- Generated from Day01/README-practice.source.md by tools/render-math.mjs — do not edit by hand. -->
 
 # Day 1 — Practice problems (matrices & linear maps)
 
@@ -31,14 +31,14 @@ Extra drill problems in the spirit of introductory linear algebra for ML. **All 
 
 **Intuition.** The **transpose** $A^\top$ “flips” the matrix: rows become columns and columns become rows. If $A$ has shape $m \times n$, then $A^\top$ has shape $n \times m$. Entrywise, the relationship between entries is:
 
-![display math](../assets/math/day01/readme-practice/eq-c80fc4996ae21100.png)
+![display math](../assets/math/eq-c80fc4996ae21100.png)
 
 
 **Why multiply $A$ by $A^\top$?** For a **tall** matrix $A$ ($m$ rows, $n$ columns), the product $AA^\top$ has size $m \times m$ (square). You can always form it: the inner dimensions are $n$ and $n$. Each number $(AA^\top)_{ij}$ is the **dot product** of row $i$ of $A$ with row $j$ of $A$—because column $j$ of $A^\top$ is exactly row $j$ of $A$ written as a column. So $AA^\top$ packages “how similar are all pairs of rows of $A$” in one matrix. That is why it is **symmetric** (same dot product if you swap $i$ and $j$). The companion $A^\top A$ is $n \times n$ and encodes dot products between **columns** of $A$. Both show up in least squares, Gram matrices, and covariance-style ideas.
 
 **Rules to remember** (transpose of a product reverses order):
 
-![display math](../assets/math/day01/readme-practice/eq-a323ff0f06576502.png)
+![display math](../assets/math/eq-a323ff0f06576502.png)
 
 
 **Beginner pitfalls:** (1) Do not confuse $AA^\top$ with $A^\top A$—they have different sizes unless $A$ is square. (2) For a **row** vector $\mathbf{r}$, $\mathbf{r}^\top$ is a column; transposing twice returns the original shape.
@@ -47,7 +47,7 @@ Extra drill problems in the spirit of introductory linear algebra for ML. **All 
 
 Let
 
-![display math](../assets/math/day01/readme-practice/eq-15fc3012fa6fa578.png)
+![display math](../assets/math/eq-15fc3012fa6fa578.png)
 
 
 Compute $AA^\top$.
@@ -56,22 +56,22 @@ Compute $AA^\top$.
 
 **Step 1 — write $A^\top$.** Swap rows and columns of $A$:
 
-![display math](../assets/math/day01/readme-practice/eq-2808fa850a0f002f.png)
+![display math](../assets/math/eq-2808fa850a0f002f.png)
 
 
 **Step 2 — size check.** $A$ is $2 \times 3$, $A^\top$ is $3 \times 2$, so $AA^\top$ is $2 \times 2$.
 
 **Step 3 — fill entries.** Row $i$ of $A$ times column $j$ of $A^\top$ equals row $i$ of $A$ dot row $j$ of $A$:
 
-![display math](../assets/math/day01/readme-practice/eq-9dd3a5e04276cb28.png)
+![display math](../assets/math/eq-9dd3a5e04276cb28.png)
 
 
-![display math](../assets/math/day01/readme-practice/eq-73c5e6c3e9eb13bc.png)
+![display math](../assets/math/eq-73c5e6c3e9eb13bc.png)
 
 
 So
 
-![display math](../assets/math/day01/readme-practice/eq-77ded3cf5be3971c.png)
+![display math](../assets/math/eq-77ded3cf5be3971c.png)
 
 
 **Sanity check:** the result is symmetric (as theory predicts). If you ever get $AA^\top$ not symmetric, recheck arithmetic.
@@ -94,7 +94,7 @@ So
 
 Let
 
-![display math](../assets/math/day01/readme-practice/eq-325478df4393c38e.png)
+![display math](../assets/math/eq-325478df4393c38e.png)
 
 
 Compute $AB$ and $BA$. Are they equal?
@@ -103,12 +103,12 @@ Compute $AB$ and $BA$. Are they equal?
 
 **Product $AB$** ($2 \times 2$):
 
-![display math](../assets/math/day01/readme-practice/eq-38312501de2ea8a5.png)
+![display math](../assets/math/eq-38312501de2ea8a5.png)
 
 
 **Product $BA$** ($3 \times 3$):
 
-![display math](../assets/math/day01/readme-practice/eq-5de6a1bb2ccc9f05.png)
+![display math](../assets/math/eq-5de6a1bb2ccc9f05.png)
 
 
 They are **not equal** (different shapes). This illustrates that matrix multiplication is **not** commutative in general.
@@ -133,7 +133,7 @@ They are **not equal** (different shapes). This illustrates that matrix multipli
 
 Let
 
-![display math](../assets/math/day01/readme-practice/eq-392e528f3c7aa779.png)
+![display math](../assets/math/eq-392e528f3c7aa779.png)
 
 
 Find $2A + B$.
@@ -142,12 +142,12 @@ Find $2A + B$.
 
 **Step 1 — scale $A$:** multiply each entry by $2$.
 
-![display math](../assets/math/day01/readme-practice/eq-a7058d3587b9e741.png)
+![display math](../assets/math/eq-a7058d3587b9e741.png)
 
 
 **Step 2 — add $B$ entrywise:** $(2A+B)_{ij} = (2A)_{ij} + B_{ij}$.
 
-![display math](../assets/math/day01/readme-practice/eq-8082e16d339d9e20.png)
+![display math](../assets/math/eq-8082e16d339d9e20.png)
 
 
 ---
@@ -156,7 +156,7 @@ Find $2A + B$.
 
 Key identity (in display math so it does not break across lines on GitHub):
 
-![display math](../assets/math/day01/readme-practice/eq-5ae5190d71fc7c60.png)
+![display math](../assets/math/eq-5ae5190d71fc7c60.png)
 
 
 ### Teaching the idea
@@ -173,7 +173,7 @@ Key identity (in display math so it does not break across lines on GitHub):
 
 Let
 
-![display math](../assets/math/day01/readme-practice/eq-bc22666016edceb1.png)
+![display math](../assets/math/eq-bc22666016edceb1.png)
 
 
 Compute $A(B+C)$ and $AB + AC$, and confirm they agree.
@@ -182,22 +182,22 @@ Compute $A(B+C)$ and $AB + AC$, and confirm they agree.
 
 **Sum:**
 
-![display math](../assets/math/day01/readme-practice/eq-5631fc104e8eb3bf.png)
+![display math](../assets/math/eq-5631fc104e8eb3bf.png)
 
 
 **Left-hand side:**
 
-![display math](../assets/math/day01/readme-practice/eq-d09a0245a7c58a6d.png)
+![display math](../assets/math/eq-d09a0245a7c58a6d.png)
 
 
 **Right-hand side:** First,
 
-![display math](../assets/math/day01/readme-practice/eq-704c596e6859c62f.png)
+![display math](../assets/math/eq-704c596e6859c62f.png)
 
 
 so
 
-![display math](../assets/math/day01/readme-practice/eq-e855da191785d0bc.png)
+![display math](../assets/math/eq-e855da191785d0bc.png)
 
 
 Same matrix; distributivity checks out.
@@ -212,7 +212,7 @@ Same matrix; distributivity checks out.
 
 **Intuition.** In the plane, **rotating every vector** by a fixed angle $\theta$ around the origin is a **linear map**: rotating $\mathbf{u}+\mathbf{v}$ gives the same result as rotating $\mathbf{u}$ and $\mathbf{v}$ and then adding them; rotating $c\mathbf{u}$ is $c$ times the rotated $\mathbf{u}$. So it must be representable by a **matrix** $R(\theta)$. For **counterclockwise** rotation by $\theta$, the standard form is
 
-![display math](../assets/math/day01/readme-practice/eq-6a89cd53d2a43ded.png)
+![display math](../assets/math/eq-6a89cd53d2a43ded.png)
 
 
 **How to read it:** The first column is where the basis vector $\mathbf{e}_1 = (1,0)^\top$ goes after rotation; the second column is where $\mathbf{e}_2 = (0,1)^\top$ goes. That fully determines the map.
@@ -225,7 +225,7 @@ Same matrix; distributivity checks out.
 
 Rotate each column vector by **$60^\circ$** counterclockwise:
 
-![display math](../assets/math/day01/readme-practice/eq-e030d0b6474a5511.png)
+![display math](../assets/math/eq-e030d0b6474a5511.png)
 
 
 Use $\cos 60^\circ = \tfrac{1}{2}$ and $\sin 60^\circ = \tfrac{\sqrt{3}}{2}$.
@@ -234,17 +234,17 @@ Use $\cos 60^\circ = \tfrac{1}{2}$ and $\sin 60^\circ = \tfrac{\sqrt{3}}{2}$.
 
 **Build $R(60^\circ)$** with $\cos 60^\circ = \tfrac{1}{2}$, $\sin 60^\circ = \tfrac{\sqrt{3}}{2}$:
 
-![display math](../assets/math/day01/readme-practice/eq-511edd80aeebfc4c.png)
+![display math](../assets/math/eq-511edd80aeebfc4c.png)
 
 
 **First vector:** multiply $R$ by $\mathbf{x}_1$ (first component of row 1 times $x_1$ plus second component times $x_2$):
 
-![display math](../assets/math/day01/readme-practice/eq-75a92378a4039e48.png)
+![display math](../assets/math/eq-75a92378a4039e48.png)
 
 
 **Second vector:** same rule for $\mathbf{x}_2$:
 
-![display math](../assets/math/day01/readme-practice/eq-84acf58f2790ac89.png)
+![display math](../assets/math/eq-84acf58f2790ac89.png)
 
 
 **Geometric check (optional):** sketch $\mathbf{x}_1$ in the first quadrant; after $60^\circ$ CCW, the vector should rotate toward the positive $y$-axis—your new coordinates should match that picture qualitatively.
@@ -269,35 +269,37 @@ Use $\cos 60^\circ = \tfrac{1}{2}$ and $\sin 60^\circ = \tfrac{\sqrt{3}}{2}$.
 
 Let
 
-![display math](../assets/math/day01/readme-practice/eq-1fcd7502c126bc44.png)
+![display math](../assets/math/eq-1fcd7502c126bc44.png)
 
 
 Find all eigenvalues and corresponding eigenvectors.
+
+**Tip:** After you find a candidate eigenvector $\mathbf{v}$ for each eigenvalue $\lambda$, a good habit is to **verify** $A\mathbf{v} = \lambda\mathbf{v}$ with one matrix–vector multiply per pair.
 
 ### Solution
 
 **Step 1 — characteristic polynomial.** Form $A - \lambda I$ and take the determinant:
 
-![display math](../assets/math/day01/readme-practice/eq-5528e5f6deed03cc.png)
+![display math](../assets/math/eq-5528e5f6deed03cc.png)
 
 
 Eigenvalues: $\lambda_1 = 1$, $\lambda_2 = 3$.
 
 **Step 2 — eigenvectors for $\lambda = 1$.** Solve $(A - I)\mathbf{v} = \mathbf{0}$:
 
-![display math](../assets/math/day01/readme-practice/eq-b4c99ff700b926e7.png)
+![display math](../assets/math/eq-b4c99ff700b926e7.png)
 
 
-Pick $v_1 = 1$, then $v_2 = -1$. One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \cr -1 \end{bmatrix}$ (any nonzero scalar multiple).
+Pick $v_1 = 1$, then $v_2 = -1$. One eigenvector is $\mathbf{v}_1 = \begin{bmatrix} 1 \cr -1 \end{bmatrix}$ (any nonzero scalar multiple).
 
 **Step 3 — eigenvectors for $\lambda = 3$.** Solve $(A - 3I)\mathbf{v} = \mathbf{0}$:
 
-![display math](../assets/math/day01/readme-practice/eq-9a2e9204e976c2fd.png)
+![display math](../assets/math/eq-9a2e9204e976c2fd.png)
 
 
-One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \cr 1 \end{bmatrix}$.
+One eigenvector is $\mathbf{v}_2 = \begin{bmatrix} 1 \cr 1 \end{bmatrix}$.
 
-**Verification (recommended):** $A\begin{bmatrix} 1 \cr -1 \end{bmatrix} = \begin{bmatrix} 1 \cr -1 \end{bmatrix}$, $A\begin{bmatrix} 1 \cr 1 \end{bmatrix} = \begin{bmatrix} 3 \cr 3 \end{bmatrix}$—each output equals eigenvalue times input.
+**Verification (recommended):** $A\mathbf{v}_1 = A\begin{bmatrix} 1 \cr -1 \end{bmatrix} = \begin{bmatrix} 1 \cr -1 \end{bmatrix} = 1\,\mathbf{v}_1$, and $A\mathbf{v}_2 = A\begin{bmatrix} 1 \cr 1 \end{bmatrix} = \begin{bmatrix} 3 \cr 3 \end{bmatrix} = 3\,\mathbf{v}_2$—each output equals eigenvalue times input.
 
 ---
 
@@ -319,7 +321,7 @@ One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \cr 1 \end{bmatrix}$.
 
 Find the rank of
 
-![display math](../assets/math/day01/readme-practice/eq-050f2eb0cbe577d6.png)
+![display math](../assets/math/eq-050f2eb0cbe577d6.png)
 
 
 ### Solution
@@ -328,17 +330,17 @@ Find the rank of
 
 **Step 2 — eliminate.** Subtract $2 \times$ row 1 from row 2, and $3 \times$ row 1 from row 3:
 
-![display math](../assets/math/day01/readme-practice/eq-64a3c3b664ff69b7.png)
+![display math](../assets/math/eq-64a3c3b664ff69b7.png)
 
 
 Then subtract row 2 from row 3:
 
-![display math](../assets/math/day01/readme-practice/eq-2d3865e7f4d8b97f.png)
+![display math](../assets/math/eq-2d3865e7f4d8b97f.png)
 
 
 **Step 3 — count pivots.** There are leading entries (pivots) in columns 1 and 2, so
 
-![display math](../assets/math/day01/readme-practice/eq-b26c6cab256b7f30.png)
+![display math](../assets/math/eq-b26c6cab256b7f30.png)
 
 
 **Interpretation:** The first two rows are not multiples of each other, so they contribute two independent directions; the third row adds nothing new. The column space is a **plane** through the origin in $\mathbb{R}^3$ (a 2-dimensional subspace).
@@ -351,7 +353,7 @@ Below, each fact is in its own **display** block so GitHub does not split symbol
 
 **Transpose — entry and product rule**
 
-![display math](../assets/math/day01/readme-practice/eq-78ed481465ba0b1c.png)
+![display math](../assets/math/eq-78ed481465ba0b1c.png)
 
 
 *Plain words:* flip rows/columns; for a product, reverse order when transposing.
@@ -364,14 +366,14 @@ Symmetric; sizes $m \times m$ and $n \times n$ for $A \in \mathbb{R}^{m \times n
 
 Inner dimensions must match; usually:
 
-![display math](../assets/math/day01/readme-practice/eq-1e073684f266efa8.png)
+![display math](../assets/math/eq-1e073684f266efa8.png)
 
 
 *Plain words:* order matters; shapes of $AB$ and $BA$ can differ.
 
 **Distributivity**
 
-![display math](../assets/math/day01/readme-practice/eq-579213426dc32e47.png)
+![display math](../assets/math/eq-579213426dc32e47.png)
 
 
 (when dimensions match). *Plain words:* like $a(b+c)=ab+ac$, but check shapes.
@@ -380,7 +382,7 @@ Inner dimensions must match; usually:
 
 **Eigenvalues**
 
-![display math](../assets/math/day01/readme-practice/eq-35adb4a65387928c.png)
+![display math](../assets/math/eq-35adb4a65387928c.png)
 
 
 *Plain words:* the $\lambda$ for which $A\mathbf{v}=\lambda\mathbf{v}$ has a nonzero $\mathbf{v}$.

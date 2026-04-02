@@ -4,11 +4,15 @@
   "type": "module",
   "scripts": {
     "render:math": "node tools/render-math.mjs",
+    "render:math:day01": "node tools/render-math.mjs --day01",
     "setup:playwright": "npx playwright install --with-deps chromium",
     "practice:all": "npm install && npm run setup:playwright && npm run render:math",
-    "practice:render": "npm run render:math"
+    "practice:render": "npm run render:math",
+    "math:all": "npm run practice:all",
+    "math:render": "npm run render:math"
   },
   "dependencies": {
+    "glob": "^10.4.5",
     "katex": "0.16.11",
     "playwright": "1.49.1"
   }

@@ -26,7 +26,7 @@ Example:
 
 The **YouTube companion** pages under [`youtube/`](youtube/README.md) use plain Unicode for short lines; the **topic notes** here use full LaTeX in inline `$...$` and in display math fences as shown above.
 
-**Day 1 practice sheet:** [`README-practice.md`](README-practice.md) is **generated** (display math as PNG). Edit [`README-practice.source.md`](README-practice.source.md); push to `main` and CI regenerates outputs, or run `npm run practice:all` locally once (see root [`README.md`](../README.md)).
+**Day 1 practice sheet:** [`README-practice.md`](README-practice.md) is **generated** (display math as PNG). Edit [`README-practice.source.md`](README-practice.source.md); push to `main` and CI regenerates outputs, or run `npm run practice:all` locally once (see root [`README.md`](../README.md)). The same pipeline applies to any `*README*.source.md` in the repo; for Day 1 only, `npm run render:math:day01` runs every `Day01/**/README*.source.md`. The short YouTube topic pages under [`youtube/`](youtube/README.md) stay plain Markdown (no ` ```math `); add a `README*.source.md` there only if you introduce display math and want PNG output.
 
 ---
 

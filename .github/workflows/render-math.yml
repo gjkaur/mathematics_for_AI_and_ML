@@ -8,7 +8,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "Day01/README-practice.source.md"
+      - "**/*README*.source.md"
       - "tools/render-math.mjs"
       - "package.json"
       - "package-lock.json"
@@ -42,4 +42,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: render math images for README-practice"
-          file_pattern: "Day01/README-practice.md assets/math/**/*.png"
+          file_pattern: "**/*README*.md assets/math/**/*.png"

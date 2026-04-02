@@ -346,6 +346,8 @@ A = \begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}.
 
 Find all eigenvalues and corresponding eigenvectors.
 
+**Tip:** After you find a candidate eigenvector $\mathbf{v}$ for each eigenvalue $\lambda$, a good habit is to **verify** $A\mathbf{v} = \lambda\mathbf{v}$ with one matrix–vector multiply per pair.
+
 ### Solution
 
 **Step 1 — characteristic polynomial.** Form $A - \lambda I$ and take the determinant:
@@ -363,7 +365,7 @@ Eigenvalues: $\lambda_1 = 1$, $\lambda_2 = 3$.
 \quad\Rightarrow\quad v_1 + v_2 = 0.
 ```
 
-Pick $v_1 = 1$, then $v_2 = -1$. One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \cr -1 \end{bmatrix}$ (any nonzero scalar multiple).
+Pick $v_1 = 1$, then $v_2 = -1$. One eigenvector is $\mathbf{v}_1 = \begin{bmatrix} 1 \cr -1 \end{bmatrix}$ (any nonzero scalar multiple).
 
 **Step 3 — eigenvectors for $\lambda = 3$.** Solve $(A - 3I)\mathbf{v} = \mathbf{0}$:
 
@@ -372,9 +374,9 @@ Pick $v_1 = 1$, then $v_2 = -1$. One eigenvector is $\mathbf{v} = \begin{bmatrix
 \quad\Rightarrow\quad v_1 = v_2.
 ```
 
-One eigenvector is $\mathbf{v} = \begin{bmatrix} 1 \cr 1 \end{bmatrix}$.
+One eigenvector is $\mathbf{v}_2 = \begin{bmatrix} 1 \cr 1 \end{bmatrix}$.
 
-**Verification (recommended):** $A\begin{bmatrix} 1 \cr -1 \end{bmatrix} = \begin{bmatrix} 1 \cr -1 \end{bmatrix}$, $A\begin{bmatrix} 1 \cr 1 \end{bmatrix} = \begin{bmatrix} 3 \cr 3 \end{bmatrix}$—each output equals eigenvalue times input.
+**Verification (recommended):** $A\mathbf{v}_1 = A\begin{bmatrix} 1 \cr -1 \end{bmatrix} = \begin{bmatrix} 1 \cr -1 \end{bmatrix} = 1\,\mathbf{v}_1$, and $A\mathbf{v}_2 = A\begin{bmatrix} 1 \cr 1 \end{bmatrix} = \begin{bmatrix} 3 \cr 3 \end{bmatrix} = 3\,\mathbf{v}_2$—each output equals eigenvalue times input.
 
 ---
 
