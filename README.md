@@ -15,9 +15,9 @@ Download the official PDF from the [companion site](https://mml-book.com/) or yo
 
 Each `DayNN/DayNN.md` file maps that day’s topics to **book chapters and section numbers** from *Mathematics for Machine Learning*.
 
-**Calculus formulas (reference):** [`README-calculus.md`](README-calculus.md) — differentiation and integration rules, multivariate gradients and Jacobians, and common ML activations.
+**Calculus formulas (reference):** [`Day03/README-calculus.md`](Day03/README-calculus.md) — differentiation and integration rules, multivariate gradients and Jacobians, and common ML activations.
 
-**Derivative drills (questions):** [`README-derivatives-practice.md`](README-derivatives-practice.md) — practice problems keyed to that formula sheet (edit [`README-derivatives-practice.source.md`](README-derivatives-practice.source.md); display math is pre-rendered to PNG).
+**Derivative drills (questions + solutions):** [`Day03/README-derivatives-practice.md`](Day03/README-derivatives-practice.md) — step-by-step worked problems keyed to that formula sheet (edit [`Day03/README-derivatives-practice.source.md`](Day03/README-derivatives-practice.source.md)).
 
 ---
 

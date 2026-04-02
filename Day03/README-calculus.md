@@ -228,8 +228,9 @@ If $\mathbf{z} = A\mathbf{x}+\mathbf{b}$, then $\dfrac{\partial \mathbf{z}}{\par
 ## Further reading
 
 - **MML textbook:** [Chapter 5 — Vector calculus](https://mml-book.com/) (§5.1–5.8 in the standard PDF).
-- **Course mapping:** [`Day03/Day03.md`](Day03/Day03.md).
-- **Worked drills:** [`Day03/README-practice.md`](Day03/README-practice.md) (if present in your clone).
+- **Course mapping:** [`Day03.md`](Day03.md).
+- **Derivative drills (with solutions):** [`README-derivatives-practice.md`](README-derivatives-practice.md).
+- **Worked vector-calculus drills:** [`README-practice.md`](README-practice.md) (if present in your clone).
 
 ---
 
