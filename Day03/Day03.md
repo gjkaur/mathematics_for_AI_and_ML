@@ -52,3 +52,7 @@ Read **Chapter 5** in order **§5.1 → §5.8**. The sections build on each othe
 ---
 
 *This file maps lecture topics to the textbook only; it does not replace solving exercises from the book.*
+
+**Practice (teaching + solutions):** [`README-practice.md`](README-practice.md) (edit [`README-practice.source.md`](README-practice.source.md)). Display math is pre-rendered to PNG (`npm run render:math` or CI). The practice sheet uses **different functions** than the optional assignment so you can assign one set and learn from the other.
+
+*Optional local handout:* `README-assignment.md` and `README-assignment.source.md` (questions only) are **ignored by git** (see [`.gitignore`](../.gitignore)) so they stay local and are not pushed.
