@@ -28,7 +28,7 @@ The **YouTube companion** pages under [`youtube/`](youtube/README.md) use plain 
 
 **Day 1 practice sheet:** [`README-practice.md`](README-practice.md) is **generated** (display math as PNG). Edit [`README-practice.source.md`](README-practice.source.md); push to `main` and CI regenerates outputs, or run `npm run practice:all` locally once (see root [`README.md`](../README.md)). The same pipeline applies to any `*README*.source.md` in the repo; for Day 1 only, `npm run render:math:day01` runs every `Day01/**/README*.source.md`. The short YouTube topic pages under [`youtube/`](youtube/README.md) stay plain Markdown (no ` ```math `); add a `README*.source.md` there only if you introduce display math and want PNG output.
 
-**Day 1 practice (part 2):** [`README-practice-part2.md`](README-practice-part2.md) — inverse, eigenvalues, rank, matrix dependence (edit [`README-practice-part2.source.md`](README-practice-part2.source.md); inline math, copied by the same render step).
+**Day 1 practice (part 2):** [`README-practice-part2.md`](README-practice-part2.md) — inverse, eigenvalues, rank, matrix dependence. Edit that file directly; it uses **display math** fenced blocks (not the PNG `render-math` pipeline) so formulas render on **github.com** in the normal file view.
 
 ---
 
