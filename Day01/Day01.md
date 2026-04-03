@@ -8,6 +8,8 @@ Use the book as the primary reference for definitions, examples, and exercises. 
 
 Detailed step-by-step notes with **LaTeX math** (inline `$...$` and GitHub **math** code fences for display—see **[00-INDEX.md](00-INDEX.md)**). Files are named `01-…` through `15-…`. Optional **YouTube companions** (one small readme per topic): **[youtube/README.md](youtube/README.md)**.
 
+**Practice (part 2):** **[README-practice-part2.md](README-practice-part2.md)** — inverse, eigenvalues/eigenvectors, rank, linear dependence of matrices (edit [`README-practice-part2.source.md`](README-practice-part2.source.md)).
+
 ---
 
 ## 1. Linear algebra — foundations
