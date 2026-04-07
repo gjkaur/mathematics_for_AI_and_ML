@@ -31,6 +31,8 @@ Read **Chapter 6** in order **§6.1 → §6.5**. Earlier sections define events,
 
 **Prerequisites:** basic set notation and calculus (integration for continuous random variables); **Chapter 5** is not strictly required for §6.1–§6.3 but helps when expectations and gradients appear together later.
 
+**Practice:** [README-practice.md](README-practice.md) — teaching notes and numerical exercises for §6.1–§6.5.
+
 ---
 
 ## Quick reference — book chapters touched on Day 4
