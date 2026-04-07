@@ -4,6 +4,10 @@
 
 Use the book as the primary reference for definitions, examples, and exercises. Section numbers follow the standard structure of the book (see [mml-book.com](https://mml-book.com/)).
 
+**Terms & formulas:** [README.md](README.md) — definitions and key equations for §6.6–6.7 and §7.1–7.3 (not a substitute for the book).
+
+**Practice:** [README-practice.md](README-practice.md) — glossary of simple definitions, formulas, concept blurbs, and numerical exercises (Beta–Binomial, exponential form, change of variables, gradient step, Lagrange, LP/QP).
+
 ---
 
 ## 1. Conjugacy, exponential families, and change of variables
