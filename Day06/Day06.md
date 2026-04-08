@@ -4,6 +4,8 @@
 
 Use the book as the primary reference for definitions, examples, and exercises. Section numbers follow the standard structure of the book (see [mml-book.com](https://mml-book.com/)).
 
+**Beginner guide:** [README.md](README.md) — detailed explanations of Day 6 terms, concepts, formulas, and small examples (Ch. 8–9; not a substitute for the book).
+
 ---
 
 ## 1. Data models (learning, ERM, loss, regularization, validation)

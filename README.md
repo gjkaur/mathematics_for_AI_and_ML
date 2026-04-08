@@ -11,7 +11,7 @@ Download the official PDF from the [companion site](https://mml-book.com/) or yo
 | Folder | Contents |
 |--------|----------|
 | [`Day01/`](Day01/) | Linear algebra (Ch. 2), analytic geometry (Ch. 3 §3.1–3.4), and data-oriented pointers (Ch. 6, 8, 9). Topic notes `01-`…`15-`, syllabus map [`Day01.md`](Day01/Day01.md), index [`00-INDEX.md`](Day01/00-INDEX.md). Practice sheets: [`README-practice.md`](Day01/README-practice.md), [`README-practice-part2.md`](Day01/README-practice-part2.md). |
-| [`Day02/`](Day02/)–[`Day08/`](Day08/) | One guide per day: textbook sections for orthonormal bases & matrix decompositions (Day 2), vector calculus (Day 3), probability (Day 4), optimization (Day 5), models & regression (Day 6), PCA & GMM (Day 7), SVM (Day 8). Day 4 practice: [`README-practice.md`](Day04/README-practice.md). Day 5 terms & formulas: [`README.md`](Day05/README.md); numerical practice: [`README-practice.md`](Day05/README-practice.md). |
+| [`Day02/`](Day02/)–[`Day08/`](Day08/) | One guide per day: textbook sections for orthonormal bases & matrix decompositions (Day 2), vector calculus (Day 3), probability (Day 4), optimization (Day 5), models & regression (Day 6), PCA & GMM (Day 7), SVM (Day 8). Day 4 practice: [`README-practice.md`](Day04/README-practice.md). Day 5 terms & formulas: [`README.md`](Day05/README.md); numerical practice: [`README-practice.md`](Day05/README-practice.md). Day 6 beginner guide (Ch. 8–9): [`README.md`](Day06/README.md). |
 
 Each `DayNN/DayNN.md` file maps that day’s topics to **book chapters and section numbers** from *Mathematics for Machine Learning*.
 
