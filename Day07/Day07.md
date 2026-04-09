@@ -4,6 +4,8 @@
 
 Use the book as the primary reference for definitions, examples, and exercises. Section numbers follow the standard structure of the book (see [mml-book.com](https://mml-book.com/)).
 
+**Simple guide:** [README.md](README.md) — PCA and Gaussian mixtures explained in plain language (not a substitute for the book).
+
 ---
 
 ## 1. Dimensionality reduction (PCA)
